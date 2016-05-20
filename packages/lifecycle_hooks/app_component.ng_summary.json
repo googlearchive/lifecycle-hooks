@@ -1,0 +1,105 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "after_content_component.dart",
+        "5": false
+      },
+      {
+        "1": "after_view_component.dart",
+        "5": false
+      },
+      {
+        "1": "counter_component.dart",
+        "5": false
+      },
+      {
+        "1": "do_check_component.dart",
+        "5": false
+      },
+      {
+        "1": "on_changes_component.dart",
+        "5": false
+      },
+      {
+        "1": "peek_a_boo_parent_component.dart",
+        "5": false
+      },
+      {
+        "1": "spy_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "AfterContentParentComponent"
+          },
+          {
+            "2": "AfterViewParentComponent"
+          },
+          {
+            "2": "CounterParentComponent"
+          },
+          {
+            "2": "DoCheckParentComponent"
+          },
+          {
+            "2": "OnChangesParentComponent"
+          },
+          {
+            "2": "PeekABooParentComponent"
+          },
+          {
+            "2": "SpyParentComponent"
+          }
+        ]
+      }
+    ],
+    "6": "app_component.dart"
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/app_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<a id=\"top\"></a>\n<h1>Component Lifecycle Hooks</h1>\n<a href=\"#hooks\">Peek-a-boo: (most) lifecycle hooks</a><br>\n<a href=\"#onchanges\">OnChanges</a><br>\n<a href=\"#docheck\">DoCheck</a><br>\n<a href=\"#after-view\">AfterViewInit & AfterViewChecked</a><br>\n<a href=\"#after-content\">AfterContentInit & AfterContentChecked</a><br>\n<a href=\"#spy\">Spy: directive with OnInit & OnDestroy</a><br>\n<a href=\"#counter\">Counter: OnChanges + Spy directive</a><br>\n\n<a id=\"hooks\"></a>\n<peek-a-boo-parent></peek-a-boo-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"spy\"></a>\n<spy-parent></spy-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"onchanges\"></a>\n<on-changes-parent></on-changes-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"docheck\"></a>\n<do-check-parent></do-check-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"after-view\"></a>\n<after-view-parent></after-view-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"after-content\"></a>\n<after-content-parent></after-content-parent>\n<a href=\"#top\">back to top</a>\n\n<a id=\"counter\"></a>\n<counter-parent></counter-parent>\n<a href=\"#top\">back to top</a>\n",
+        "templateUrl": "asset:lifecycle_hooks/lib/app_component.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

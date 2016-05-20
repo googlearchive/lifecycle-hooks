@@ -1,0 +1,106 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      },
+      {
+        "1": "peek_a_boo_component.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "PeekABooParentComponent",
+        "5": [
+          {
+            "1": "LoggerService",
+            "4": "_logger"
+          }
+        ],
+        "7": [
+          {
+            "2": "PeekABooComponent"
+          }
+        ]
+      }
+    ],
+    "6": "peek_a_boo_parent_component.dart"
+  },
+  "type": {
+    "PeekABooParentComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "peek-a-boo-parent",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "PeekABooParentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_parent_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "LoggerService",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "    <div class=\"parent\">\n      <h2>Peek-A-Boo</h2>\n\n      <button (click)=\"toggleChild()\">\n        {{hasChild ? 'Destroy' : 'Create'}} PeekABooComponent\n      </button>\n      <button (click)=\"updateHero()\" [hidden]=\"!hasChild\">Update Hero</button>\n\n      <peek-a-boo *ngIf=\"hasChild\" [name]=\"heroName\">\n      </peek-a-boo>\n\n      <h4>-- Lifecycle Hook Log --</h4>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/peek_a_boo_parent_component.dart",
+        "styles": [
+          ".parent {background: moccasin}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "LoggerService",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}

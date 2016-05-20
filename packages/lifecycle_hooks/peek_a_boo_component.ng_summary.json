@@ -1,0 +1,117 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "logger_service.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "PeekABooComponent",
+        "5": [
+          {
+            "1": "LoggerService",
+            "4": "logger"
+          }
+        ],
+        "6": [
+          "OnChanges",
+          "OnInit",
+          "DoCheck",
+          "AfterContentInit",
+          "AfterContentChecked",
+          "AfterViewInit",
+          "AfterViewChecked",
+          "OnDestroy"
+        ]
+      }
+    ],
+    "6": "peek_a_boo_component.dart"
+  },
+  "type": {
+    "PeekABoo": {
+      "class": "Identifier",
+      "name": "PeekABoo",
+      "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PeekABooComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "peek-a-boo",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "PeekABooComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": [
+          {
+            "token": {
+              "value": null,
+              "identifier": {
+                "class": "Identifier",
+                "name": "LoggerService",
+                "moduleUrl": null,
+                "prefix": null,
+                "value": null
+              },
+              "identifierIsInstance": false
+            },
+            "query": null,
+            "viewQuery": null,
+            "value": null,
+            "isAttribute": false,
+            "isSelf": false,
+            "isHost": false,
+            "isSkipSelf": false,
+            "isOptional": false,
+            "isValue": false
+          }
+        ]
+      },
+      "changeDetection": 5,
+      "inputs": {
+        "name": "name"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        3,
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        1
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "<p>Now you see my hero, {{name}}</p>",
+        "templateUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "styles": [
+          "p {background: LightYellow; padding: 8px}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
