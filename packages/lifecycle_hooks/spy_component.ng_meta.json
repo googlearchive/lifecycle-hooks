@@ -26,7 +26,7 @@
         ],
         "7": [
           {
-            "2": "Spy"
+            "2": "SpyDirective"
           }
         ]
       }
@@ -34,15 +34,15 @@
     "6": "spy_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "spy_directive.ngfactory.dart",
+        "1": "spy_directive.template.dart",
         "4": "i2"
       }
     ]
@@ -131,6 +131,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

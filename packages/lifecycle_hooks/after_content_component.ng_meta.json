@@ -49,11 +49,11 @@
     "6": "after_content_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i1"
       }
     ]
@@ -142,7 +142,7 @@
       ],
       "template": {
         "encapsulation": 2,
-        "template": "      <div>-- projected content begins --</div>\n        <ng-content></ng-content>\n      <div>-- projected content ends --</div>\n      <p *ngIf=\"comment != null\" class=\"comment\">{{comment}}</p>\n    ",
+        "template": "      <div>-- projected content begins --</div>\n        <ng-content></ng-content>\n      <div>-- projected content ends --</div>\n      <p *ngIf=\"comment.isNotEmpty\" class=\"comment\">{{comment}}</p>\n    ",
         "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
         "styles": [],
         "styleUrls": [],
@@ -259,6 +259,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

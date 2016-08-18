@@ -17,13 +17,13 @@
     ],
     "5": [
       {
-        "1": "MyCounter",
+        "1": "MyCounterComponent",
         "6": [
           "OnChanges"
         ],
         "7": [
           {
-            "2": "Spy"
+            "2": "SpyDirective"
           }
         ]
       },
@@ -37,7 +37,7 @@
         ],
         "7": [
           {
-            "2": "MyCounter"
+            "2": "MyCounterComponent"
           }
         ]
       }
@@ -45,28 +45,28 @@
     "6": "counter_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i1"
       },
       {
-        "1": "spy_directive.ngfactory.dart",
+        "1": "spy_directive.template.dart",
         "4": "i2"
       }
     ]
   },
   "type": {
-    "MyCounter": {
+    "MyCounterComponent": {
       "class": "Directive",
       "isComponent": true,
       "selector": "my-counter",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "MyCounter",
+        "name": "MyCounterComponent",
         "moduleUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
         "prefix": null,
         "isHost": false,
@@ -181,6 +181,7 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
+          "useProperty": null,
           "multi": false,
           "deps": null
         }

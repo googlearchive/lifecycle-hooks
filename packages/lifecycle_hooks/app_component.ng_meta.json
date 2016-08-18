@@ -66,35 +66,35 @@
     "6": "app_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "after_content_component.ngfactory.dart",
+        "1": "after_content_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "after_view_component.ngfactory.dart",
+        "1": "after_view_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "counter_component.ngfactory.dart",
+        "1": "counter_component.template.dart",
         "4": "i3"
       },
       {
-        "1": "do_check_component.ngfactory.dart",
+        "1": "do_check_component.template.dart",
         "4": "i4"
       },
       {
-        "1": "on_changes_component.ngfactory.dart",
+        "1": "on_changes_component.template.dart",
         "4": "i5"
       },
       {
-        "1": "peek_a_boo_parent_component.ngfactory.dart",
+        "1": "peek_a_boo_parent_component.template.dart",
         "4": "i6"
       },
       {
-        "1": "spy_component.ngfactory.dart",
+        "1": "spy_component.template.dart",
         "4": "i7"
       }
     ]

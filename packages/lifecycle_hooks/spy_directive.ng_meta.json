@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "Spy",
+        "1": "SpyDirective",
         "5": [
           {
             "1": "LoggerService",
@@ -29,24 +29,24 @@
     "6": "spy_directive.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "logger_service.ngfactory.dart",
+        "1": "logger_service.template.dart",
         "4": "i1"
       }
     ]
   },
   "type": {
-    "Spy": {
+    "SpyDirective": {
       "class": "Directive",
       "isComponent": false,
       "selector": "[mySpy]",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "Spy",
+        "name": "SpyDirective",
         "moduleUrl": "asset:lifecycle_hooks/lib/spy_directive.dart",
         "prefix": null,
         "isHost": false,
