@@ -108,7 +108,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<div class=\"parent\">\n  <h2>{{title}}</h2>\n\n  <table>\n    <tr><td>Power: </td><td><input [(ngModel)]=\"power\"></td></tr>\n    <tr><td>Hero.name: </td><td><input [(ngModel)]=\"hero.name\"></td></tr>\n  </table>\n  <p><button (click)=\"reset()\">Reset Log</button></p>\n\n  <on-changes [hero]=\"hero\" [power]=\"power\"></on-changes>\n  <do-check [hero]=\"hero\" [power]=\"power\"></do-check>\n</div>\n",
+        "template": "<div class=\"parent\">\n  <h2>{{title}}</h2>\n\n  <table>\n    <tr><td>Power: </td><td><input [(ngModel)]=\"power\"></td></tr>\n    <tr><td>Hero.name: </td><td><input [(ngModel)]=\"hero.name\"></td></tr>\n  </table>\n  <p><button (click)=\"reset()\">Reset Log</button></p>\n\n  <on-changes [hero]=\"hero\" [power]=\"power\"></on-changes>\n</div>\n",
         "templateUrl": "asset:lifecycle_hooks/lib/on_changes_parent_component.html",
         "styles": [
           ".parent {background: Lavender}"
