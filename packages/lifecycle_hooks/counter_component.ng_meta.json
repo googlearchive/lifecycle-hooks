@@ -73,9 +73,12 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "counter": "counter"
+      },
+      "inputTypes": {
+        "counter": " num"
       },
       "outputs": {},
       "hostListeners": {},
@@ -136,8 +139,9 @@
           }
         ]
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {},
+      "inputTypes": {},
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},

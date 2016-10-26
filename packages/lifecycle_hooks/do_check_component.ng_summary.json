@@ -47,10 +47,14 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {
         "hero": "hero",
         "power": "power"
+      },
+      "inputTypes": {
+        "hero": " Hero",
+        "power": " String"
       },
       "outputs": {},
       "hostListeners": {},
@@ -89,8 +93,9 @@
         "value": null,
         "diDeps": []
       },
-      "changeDetection": 5,
+      "changeDetection": 6,
       "inputs": {},
+      "inputTypes": {},
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
