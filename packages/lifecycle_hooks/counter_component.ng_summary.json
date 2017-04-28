@@ -45,49 +45,6 @@
     "6": "counter_component.dart"
   },
   "type": {
-    "MyCounterComponent": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "my-counter",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "MyCounterComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": []
-      },
-      "changeDetection": 6,
-      "inputs": {
-        "counter": "counter"
-      },
-      "inputTypes": {
-        "counter": " num"
-      },
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [
-        3
-      ],
-      "template": {
-        "encapsulation": 0,
-        "template": "    <div class=\"counter\">\n      Counter = {{counter}}\n\n      <h5>-- Counter Change Log --</h5>\n      <div *ngFor=\"let chg of changeLog\" mySpy>{{chg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
-        "styles": [
-          ".counter {background: LightYellow; padding: 8px; margin-top: 8px}"
-        ],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
     "CounterParentComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -150,6 +107,49 @@
           "value": null
         }
       ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "MyCounterComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-counter",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MyCounterComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "counter": "counter"
+      },
+      "inputTypes": {
+        "counter": " num"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        3
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "    <div class=\"counter\">\n      Counter = {{counter}}\n\n      <h5>-- Counter Change Log --</h5>\n      <div *ngFor=\"let chg of changeLog\" mySpy>{{chg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "styles": [
+          ".counter {background: LightYellow; padding: 8px; margin-top: 8px}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

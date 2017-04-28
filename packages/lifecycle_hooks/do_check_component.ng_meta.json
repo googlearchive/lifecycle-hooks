@@ -32,13 +32,6 @@
     ]
   },
   "type": {
-    "Hero": {
-      "class": "Identifier",
-      "name": "Hero",
-      "moduleUrl": "asset:lifecycle_hooks/lib/do_check_component.dart",
-      "prefix": null,
-      "value": null
-    },
     "DoCheckComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -143,6 +136,13 @@
           "read": null
         }
       ]
+    },
+    "Hero": {
+      "class": "Identifier",
+      "name": "Hero",
+      "moduleUrl": "asset:lifecycle_hooks/lib/do_check_component.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}

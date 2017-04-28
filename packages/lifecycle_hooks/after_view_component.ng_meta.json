@@ -61,41 +61,6 @@
     ]
   },
   "type": {
-    "ChildViewComponent": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "my-child-view",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "ChildViewComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": []
-      },
-      "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [],
-      "template": {
-        "encapsulation": 2,
-        "template": "<input [(ngModel)]=\"hero\">",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
     "AfterViewComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -258,11 +223,45 @@
           "useExisting": null,
           "useValue": null,
           "useFactory": null,
-          "useProperty": null,
           "multi": false,
           "deps": null
         }
       ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ChildViewComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-child-view",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ChildViewComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<input [(ngModel)]=\"hero\">",
+        "templateUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

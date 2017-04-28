@@ -49,41 +49,6 @@
     "6": "after_content_component.dart"
   },
   "type": {
-    "ChildComponent": {
-      "class": "Directive",
-      "isComponent": true,
-      "selector": "my-child",
-      "exportAs": null,
-      "type": {
-        "class": "Type",
-        "name": "ChildComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
-        "prefix": null,
-        "isHost": false,
-        "value": null,
-        "diDeps": []
-      },
-      "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
-      "outputs": {},
-      "hostListeners": {},
-      "hostProperties": {},
-      "hostAttributes": {},
-      "lifecycleHooks": [],
-      "template": {
-        "encapsulation": 2,
-        "template": "<input [(ngModel)]=\"hero\">",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
-        "styles": [],
-        "styleUrls": [],
-        "ngContentSelectors": []
-      },
-      "providers": [],
-      "viewProviders": [],
-      "queries": [],
-      "viewQueries": []
-    },
     "AfterContentComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -227,6 +192,41 @@
           "value": null
         }
       ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "ChildComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-child",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "ChildComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<input [(ngModel)]=\"hero\">",
+        "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
