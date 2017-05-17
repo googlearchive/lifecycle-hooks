@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "package:angular2/core.dart",
+        "1": "package:angular2/angular2.dart",
         "5": false
       }
     ],
@@ -16,11 +16,19 @@
         "1": "OnChangesComponent",
         "6": [
           "OnChanges"
+        ],
+        "7": [
+          {
+            "2": "CORE_DIRECTIVES"
+          }
         ]
       },
       {
         "1": "OnChangesParentComponent",
         "7": [
+          {
+            "2": "COMMON_DIRECTIVES"
+          },
           {
             "2": "OnChangesComponent"
           }
@@ -30,7 +38,7 @@
     "6": "on_changes_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/angular2.template.dart",
         "4": "i0"
       }
     ]
