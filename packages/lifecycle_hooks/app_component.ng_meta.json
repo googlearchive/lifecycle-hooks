@@ -7,31 +7,31 @@
         "5": false
       },
       {
-        "1": "after_content_component.dart",
+        "1": "src/after_content_component.dart",
         "5": false
       },
       {
-        "1": "after_view_component.dart",
+        "1": "src/after_view_component.dart",
         "5": false
       },
       {
-        "1": "counter_component.dart",
+        "1": "src/counter_component.dart",
         "5": false
       },
       {
-        "1": "do_check_component.dart",
+        "1": "src/do_check_component.dart",
         "5": false
       },
       {
-        "1": "on_changes_component.dart",
+        "1": "src/on_changes_component.dart",
         "5": false
       },
       {
-        "1": "peek_a_boo_parent_component.dart",
+        "1": "src/peek_a_boo_parent_component.dart",
         "5": false
       },
       {
-        "1": "spy_component.dart",
+        "1": "src/spy_component.dart",
         "5": false
       }
     ],
@@ -70,31 +70,31 @@
         "4": "i0"
       },
       {
-        "1": "after_content_component.template.dart",
+        "1": "src/after_content_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "after_view_component.template.dart",
+        "1": "src/after_view_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "counter_component.template.dart",
+        "1": "src/counter_component.template.dart",
         "4": "i3"
       },
       {
-        "1": "do_check_component.template.dart",
+        "1": "src/do_check_component.template.dart",
         "4": "i4"
       },
       {
-        "1": "on_changes_component.template.dart",
+        "1": "src/on_changes_component.template.dart",
         "4": "i5"
       },
       {
-        "1": "peek_a_boo_parent_component.template.dart",
+        "1": "src/peek_a_boo_parent_component.template.dart",
         "4": "i6"
       },
       {
-        "1": "spy_component.template.dart",
+        "1": "src/spy_component.template.dart",
         "4": "i7"
       }
     ]

@@ -70,7 +70,7 @@
       "type": {
         "class": "Type",
         "name": "AfterContentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -111,7 +111,7 @@
       "template": {
         "encapsulation": 2,
         "template": "    <div>-- projected content begins --</div>\n      <ng-content></ng-content>\n    <div>-- projected content ends --</div>\n    <p *ngIf=\"comment.isNotEmpty\" class=\"comment\">{{comment}}</p>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": [
@@ -151,7 +151,7 @@
       "type": {
         "class": "Type",
         "name": "AfterContentParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -189,7 +189,7 @@
       "template": {
         "encapsulation": 0,
         "template": "    <div class=\"parent\">\n      <h2>AfterContent</h2>\n\n      <div *ngIf=\"show\">\n        <after-content>\n          <my-child></my-child>\n        </after-content>\n      </div>\n\n      <h4>-- AfterContent Logs --</h4>\n      <p><button (click)=\"reset()\">Reset</button></p>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [
           ".parent {background: burlywood}"
         ],
@@ -217,7 +217,7 @@
       "type": {
         "class": "Type",
         "name": "ChildComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -234,7 +234,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<input [(ngModel)]=\"hero\">",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_content_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

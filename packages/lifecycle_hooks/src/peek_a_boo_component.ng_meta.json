@@ -32,13 +32,23 @@
         ]
       }
     ],
-    "6": "peek_a_boo_component.dart"
+    "6": "peek_a_boo_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "logger_service.template.dart",
+        "4": "i1"
+      }
+    ]
   },
   "type": {
     "PeekABoo": {
       "class": "Identifier",
       "name": "PeekABoo",
-      "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+      "moduleUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
       "prefix": null,
       "value": null
     },
@@ -50,7 +60,7 @@
       "type": {
         "class": "Type",
         "name": "PeekABooComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -61,7 +71,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "LoggerService",
-                "moduleUrl": null,
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -101,7 +111,7 @@
       "template": {
         "encapsulation": 0,
         "template": "<p>Now you see my hero, {{name}}</p>",
-        "templateUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
         "styles": [
           "p {background: LightYellow; padding: 8px}"
         ],

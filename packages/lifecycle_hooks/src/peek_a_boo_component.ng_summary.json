@@ -13,31 +13,44 @@
     ],
     "5": [
       {
-        "1": "SpyDirective",
+        "1": "PeekABooComponent",
         "5": [
           {
             "1": "LoggerService",
-            "4": "_logger"
+            "4": "logger"
           }
         ],
         "6": [
+          "OnChanges",
           "OnInit",
+          "DoCheck",
+          "AfterContentInit",
+          "AfterContentChecked",
+          "AfterViewInit",
+          "AfterViewChecked",
           "OnDestroy"
         ]
       }
     ],
-    "6": "spy_directive.dart"
+    "6": "peek_a_boo_component.dart"
   },
   "type": {
-    "SpyDirective": {
+    "PeekABoo": {
+      "class": "Identifier",
+      "name": "PeekABoo",
+      "moduleUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "PeekABooComponent": {
       "class": "Directive",
-      "isComponent": false,
-      "selector": "[mySpy]",
+      "isComponent": true,
+      "selector": "peek-a-boo",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "SpyDirective",
-        "moduleUrl": "asset:lifecycle_hooks/lib/spy_directive.dart",
+        "name": "PeekABooComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -65,17 +78,36 @@
         ]
       },
       "changeDetection": 6,
-      "inputs": {},
-      "inputTypes": {},
+      "inputs": {
+        "name": "name"
+      },
+      "inputTypes": {
+        "name": " String"
+      },
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
       "hostAttributes": {},
       "lifecycleHooks": [
+        3,
         0,
+        2,
+        4,
+        5,
+        6,
+        7,
         1
       ],
-      "template": null,
+      "template": {
+        "encapsulation": 0,
+        "template": "<p>Now you see my hero, {{name}}</p>",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_component.dart",
+        "styles": [
+          "p {background: LightYellow; padding: 8px}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
       "providers": [],
       "viewProviders": [],
       "queries": [],

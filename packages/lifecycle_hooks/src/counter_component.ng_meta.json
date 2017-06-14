@@ -17,7 +17,21 @@
     ],
     "5": [
       {
-        "1": "SpyParentComponent",
+        "1": "MyCounterComponent",
+        "6": [
+          "OnChanges"
+        ],
+        "7": [
+          {
+            "2": "CORE_DIRECTIVES"
+          },
+          {
+            "2": "SpyDirective"
+          }
+        ]
+      },
+      {
+        "1": "CounterParentComponent",
         "5": [
           {
             "1": "LoggerService",
@@ -26,15 +40,15 @@
         ],
         "7": [
           {
-            "2": "COMMON_DIRECTIVES"
+            "2": "CORE_DIRECTIVES"
           },
           {
-            "2": "SpyDirective"
+            "2": "MyCounterComponent"
           }
         ]
       }
     ],
-    "6": "spy_component.dart",
+    "6": "counter_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
@@ -51,15 +65,15 @@
     ]
   },
   "type": {
-    "SpyParentComponent": {
+    "CounterParentComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "spy-parent",
+      "selector": "counter-parent",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "SpyParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/spy_component.dart",
+        "name": "CounterParentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -70,7 +84,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "LoggerService",
-                "moduleUrl": "asset:lifecycle_hooks/lib/logger_service.dart",
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -96,11 +110,10 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<div class=\"parent\">\n  <h2>Spy Directive</h2>\n\n  <input [(ngModel)]=\"newName\" (keyup.enter)=\"addHero()\">\n  <button (click)=\"addHero()\">Add Hero</button>\n  <button (click)=\"reset()\">Reset Heroes</button>\n\n  <p></p>\n  <div *ngFor=\"let hero of heroes\" mySpy class=\"heroes\">\n    {{hero}}\n  </div>\n  <h4>-- Spy Lifecycle Hook Log --</h4>\n  <div *ngFor=\"let msg of logs\">{{msg}}</div>\n</div>\n",
-        "templateUrl": "asset:lifecycle_hooks/lib/spy_component.html",
+        "template": "    <div class=\"parent\">\n      <h2>Counter Spy</h2>\n\n      <button (click)=\"updateCounter()\">Update counter</button>\n      <button (click)=\"reset()\">Reset Counter</button>\n\n      <my-counter [counter]=\"value\"></my-counter>\n\n      <h4>-- Spy Lifecycle Hook Log --</h4>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "styles": [
-          ".parent {background: khaki}",
-          ".heroes {background: LightYellow; padding: 0 8px}"
+          ".parent {background: gold;}"
         ],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -113,7 +126,7 @@
             "identifier": {
               "class": "Type",
               "name": "LoggerService",
-              "moduleUrl": "asset:lifecycle_hooks/lib/logger_service.dart",
+              "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
               "prefix": null,
               "isHost": false,
               "value": null,
@@ -124,7 +137,7 @@
           "useClass": {
             "class": "Type",
             "name": "LoggerService",
-            "moduleUrl": "asset:lifecycle_hooks/lib/logger_service.dart",
+            "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
             "prefix": null,
             "isHost": false,
             "value": null,
@@ -137,6 +150,49 @@
           "deps": null
         }
       ],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    },
+    "MyCounterComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-counter",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "MyCounterComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {
+        "counter": "counter"
+      },
+      "inputTypes": {
+        "counter": " num"
+      },
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [
+        3
+      ],
+      "template": {
+        "encapsulation": 0,
+        "template": "    <div class=\"counter\">\n      Counter = {{counter}}\n\n      <h5>-- Counter Change Log --</h5>\n      <div *ngFor=\"let chg of changeLog\" mySpy>{{chg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
+        "styles": [
+          ".counter {background: LightYellow; padding: 8px; margin-top: 8px}"
+        ],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

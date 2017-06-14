@@ -59,7 +59,7 @@
       "type": {
         "class": "Type",
         "name": "CounterParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -97,7 +97,7 @@
       "template": {
         "encapsulation": 0,
         "template": "    <div class=\"parent\">\n      <h2>Counter Spy</h2>\n\n      <button (click)=\"updateCounter()\">Update counter</button>\n      <button (click)=\"reset()\">Reset Counter</button>\n\n      <my-counter [counter]=\"value\"></my-counter>\n\n      <h4>-- Spy Lifecycle Hook Log --</h4>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "styles": [
           ".parent {background: gold;}"
         ],
@@ -125,7 +125,7 @@
       "type": {
         "class": "Type",
         "name": "MyCounterComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -148,7 +148,7 @@
       "template": {
         "encapsulation": 0,
         "template": "    <div class=\"counter\">\n      Counter = {{counter}}\n\n      <h5>-- Counter Change Log --</h5>\n      <div *ngFor=\"let chg of changeLog\" mySpy>{{chg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/counter_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/counter_component.dart",
         "styles": [
           ".counter {background: LightYellow; padding: 8px; margin-top: 8px}"
         ],

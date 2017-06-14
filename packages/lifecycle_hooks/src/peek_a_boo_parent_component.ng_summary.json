@@ -9,58 +9,43 @@
       {
         "1": "logger_service.dart",
         "5": false
+      },
+      {
+        "1": "peek_a_boo_component.dart",
+        "5": false
       }
     ],
     "5": [
       {
-        "1": "PeekABooComponent",
+        "1": "PeekABooParentComponent",
         "5": [
           {
             "1": "LoggerService",
-            "4": "logger"
+            "4": "_logger"
           }
         ],
-        "6": [
-          "OnChanges",
-          "OnInit",
-          "DoCheck",
-          "AfterContentInit",
-          "AfterContentChecked",
-          "AfterViewInit",
-          "AfterViewChecked",
-          "OnDestroy"
+        "7": [
+          {
+            "2": "COMMON_DIRECTIVES"
+          },
+          {
+            "2": "PeekABooComponent"
+          }
         ]
       }
     ],
-    "6": "peek_a_boo_component.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      },
-      {
-        "1": "logger_service.template.dart",
-        "4": "i1"
-      }
-    ]
+    "6": "peek_a_boo_parent_component.dart"
   },
   "type": {
-    "PeekABoo": {
-      "class": "Identifier",
-      "name": "PeekABoo",
-      "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
-      "prefix": null,
-      "value": null
-    },
-    "PeekABooComponent": {
+    "PeekABooParentComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "peek-a-boo",
+      "selector": "peek-a-boo-parent",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "PeekABooComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "name": "PeekABooParentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_parent_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -71,7 +56,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "LoggerService",
-                "moduleUrl": "asset:lifecycle_hooks/lib/logger_service.dart",
+                "moduleUrl": null,
                 "prefix": null,
                 "value": null
               },
@@ -88,37 +73,32 @@
         ]
       },
       "changeDetection": 6,
-      "inputs": {
-        "name": "name"
-      },
-      "inputTypes": {
-        "name": " String"
-      },
+      "inputs": {},
+      "inputTypes": {},
       "outputs": {},
       "hostListeners": {},
       "hostProperties": {},
       "hostAttributes": {},
-      "lifecycleHooks": [
-        3,
-        0,
-        2,
-        4,
-        5,
-        6,
-        7,
-        1
-      ],
+      "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "<p>Now you see my hero, {{name}}</p>",
-        "templateUrl": "asset:lifecycle_hooks/lib/peek_a_boo_component.dart",
+        "template": "    <div class=\"parent\">\n      <h2>Peek-A-Boo</h2>\n\n      <button (click)=\"toggleChild()\">\n        {{hasChild ? 'Destroy' : 'Create'}} PeekABooComponent\n      </button>\n      <button (click)=\"updateHero()\" [hidden]=\"!hasChild\">Update Hero</button>\n\n      <peek-a-boo *ngIf=\"hasChild\" [name]=\"heroName\">\n      </peek-a-boo>\n\n      <h4>-- Lifecycle Hook Log --</h4>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/peek_a_boo_parent_component.dart",
         "styles": [
-          "p {background: LightYellow; padding: 8px}"
+          ".parent {background: moccasin}"
         ],
         "styleUrls": [],
         "ngContentSelectors": []
       },
-      "providers": [],
+      "providers": [
+        {
+          "class": "Identifier",
+          "name": "LoggerService",
+          "moduleUrl": null,
+          "prefix": null,
+          "value": null
+        }
+      ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []

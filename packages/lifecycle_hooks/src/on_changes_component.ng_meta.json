@@ -47,7 +47,7 @@
     "Hero": {
       "class": "Identifier",
       "name": "Hero",
-      "moduleUrl": "asset:lifecycle_hooks/lib/on_changes_component.dart",
+      "moduleUrl": "asset:lifecycle_hooks/lib/src/on_changes_component.dart",
       "prefix": null,
       "value": null
     },
@@ -59,7 +59,7 @@
       "type": {
         "class": "Type",
         "name": "OnChangesComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/on_changes_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/on_changes_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -84,7 +84,7 @@
       "template": {
         "encapsulation": 0,
         "template": "    <div class=\"hero\">\n      <p>{{hero.name}} can {{power}}</p>\n\n      <h4>-- Change Log --</h4>\n      <div *ngFor=\"let chg of changeLog\">{{chg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/on_changes_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/on_changes_component.dart",
         "styles": [
           ".hero {background: LightYellow; padding: 8px; margin-top: 8px}",
           "p {background: Yellow; padding: 8px; margin-top: 8px}"
@@ -105,7 +105,7 @@
       "type": {
         "class": "Type",
         "name": "OnChangesParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/on_changes_component.dart",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/on_changes_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -122,7 +122,7 @@
       "template": {
         "encapsulation": 0,
         "template": "<div class=\"parent\">\n  <h2>{{title}}</h2>\n\n  <table>\n    <tr><td>Power: </td><td><input [(ngModel)]=\"power\"></td></tr>\n    <tr><td>Hero.name: </td><td><input [(ngModel)]=\"hero.name\"></td></tr>\n  </table>\n  <p><button (click)=\"reset()\">Reset Log</button></p>\n\n  <on-changes [hero]=\"hero\" [power]=\"power\"></on-changes>\n</div>\n",
-        "templateUrl": "asset:lifecycle_hooks/lib/on_changes_parent_component.html",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/on_changes_parent_component.html",
         "styles": [
           ".parent {background: Lavender}"
         ],
@@ -140,7 +140,7 @@
               "identifier": {
                 "class": "Type",
                 "name": "OnChangesComponent",
-                "moduleUrl": "asset:lifecycle_hooks/lib/on_changes_component.dart",
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/on_changes_component.dart",
                 "prefix": null,
                 "isHost": false,
                 "value": null,

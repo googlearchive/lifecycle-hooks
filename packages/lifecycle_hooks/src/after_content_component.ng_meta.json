@@ -13,7 +13,7 @@
     ],
     "5": [
       {
-        "1": "ChildViewComponent",
+        "1": "ChildComponent",
         "7": [
           {
             "2": "COMMON_DIRECTIVES"
@@ -21,7 +21,7 @@
         ]
       },
       {
-        "1": "AfterViewComponent",
+        "1": "AfterContentComponent",
         "5": [
           {
             "1": "LoggerService",
@@ -29,20 +29,17 @@
           }
         ],
         "6": [
-          "AfterViewChecked",
-          "AfterViewInit"
+          "AfterContentChecked",
+          "AfterContentInit"
         ],
         "7": [
           {
             "2": "CORE_DIRECTIVES"
-          },
-          {
-            "2": "ChildViewComponent"
           }
         ]
       },
       {
-        "1": "AfterViewParentComponent",
+        "1": "AfterContentParentComponent",
         "5": [
           {
             "1": "LoggerService",
@@ -54,23 +51,36 @@
             "2": "CORE_DIRECTIVES"
           },
           {
-            "2": "AfterViewComponent"
+            "2": "AfterContentComponent"
+          },
+          {
+            "2": "ChildComponent"
           }
         ]
       }
     ],
-    "6": "after_view_component.dart"
+    "6": "after_content_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "logger_service.template.dart",
+        "4": "i1"
+      }
+    ]
   },
   "type": {
-    "AfterViewComponent": {
+    "AfterContentComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "after-view",
+      "selector": "after-content",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "AfterViewComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "name": "AfterContentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -81,7 +91,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "LoggerService",
-                "moduleUrl": null,
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -105,51 +115,55 @@
       "hostProperties": {},
       "hostAttributes": {},
       "lifecycleHooks": [
-        7,
-        6
+        5,
+        4
       ],
       "template": {
         "encapsulation": 2,
-        "template": "    <div>-- child view begins --</div>\n      <my-child-view></my-child-view>\n    <div>-- child view ends --</div>\n    <p *ngIf=\"comment.isNotEmpty\" class=\"comment\">{{comment}}</p>",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "template": "    <div>-- projected content begins --</div>\n      <ng-content></ng-content>\n    <div>-- projected content ends --</div>\n    <p *ngIf=\"comment.isNotEmpty\" class=\"comment\">{{comment}}</p>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [],
         "styleUrls": [],
-        "ngContentSelectors": []
+        "ngContentSelectors": [
+          "*"
+        ]
       },
       "providers": [],
       "viewProviders": [],
-      "queries": [],
-      "viewQueries": [
+      "queries": [
         {
           "selectors": [
             {
               "value": null,
               "identifier": {
-                "class": "Identifier",
-                "name": "ChildViewComponent",
-                "moduleUrl": null,
+                "class": "Type",
+                "name": "ChildComponent",
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
                 "prefix": null,
-                "value": null
+                "isHost": false,
+                "value": null,
+                "diDeps": []
               },
               "identifierIsInstance": false
             }
           ],
-          "descendants": true,
+          "descendants": false,
           "first": true,
-          "propertyName": "viewChild",
+          "propertyName": "contentChild",
           "read": null
         }
-      ]
+      ],
+      "viewQueries": []
     },
-    "AfterViewParentComponent": {
+    "AfterContentParentComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "after-view-parent",
+      "selector": "after-content-parent",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "AfterViewParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "name": "AfterContentParentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -160,7 +174,7 @@
               "identifier": {
                 "class": "Identifier",
                 "name": "LoggerService",
-                "moduleUrl": null,
+                "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
                 "prefix": null,
                 "value": null
               },
@@ -186,8 +200,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "    <div class=\"parent\">\n      <h2>AfterView</h2>\n\n      <after-view  *ngIf=\"show\"></after-view>\n\n      <h4>-- AfterView Logs --</h4>\n      <p><button (click)=\"reset()\">Reset</button></p>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "template": "    <div class=\"parent\">\n      <h2>AfterContent</h2>\n\n      <div *ngIf=\"show\">\n        <after-content>\n          <my-child></my-child>\n        </after-content>\n      </div>\n\n      <h4>-- AfterContent Logs --</h4>\n      <p><button (click)=\"reset()\">Reset</button></p>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [
           ".parent {background: burlywood}"
         ],
@@ -196,26 +210,49 @@
       },
       "providers": [
         {
-          "class": "Identifier",
-          "name": "LoggerService",
-          "moduleUrl": null,
-          "prefix": null,
-          "value": null
+          "class": "Provider",
+          "token": {
+            "value": null,
+            "identifier": {
+              "class": "Type",
+              "name": "LoggerService",
+              "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
+              "prefix": null,
+              "isHost": false,
+              "value": null,
+              "diDeps": []
+            },
+            "identifierIsInstance": false
+          },
+          "useClass": {
+            "class": "Type",
+            "name": "LoggerService",
+            "moduleUrl": "asset:lifecycle_hooks/lib/src/logger_service.dart",
+            "prefix": null,
+            "isHost": false,
+            "value": null,
+            "diDeps": []
+          },
+          "useExisting": null,
+          "useValue": null,
+          "useFactory": null,
+          "multi": false,
+          "deps": null
         }
       ],
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
     },
-    "ChildViewComponent": {
+    "ChildComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "my-child-view",
+      "selector": "my-child",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ChildViewComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "name": "ChildComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -232,7 +269,7 @@
       "template": {
         "encapsulation": 2,
         "template": "<input [(ngModel)]=\"hero\">",
-        "templateUrl": "asset:lifecycle_hooks/lib/after_view_component.dart",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/after_content_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

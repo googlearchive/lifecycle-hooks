@@ -11,13 +11,13 @@
         "5": false
       },
       {
-        "1": "peek_a_boo_component.dart",
+        "1": "spy_directive.dart",
         "5": false
       }
     ],
     "5": [
       {
-        "1": "PeekABooParentComponent",
+        "1": "SpyParentComponent",
         "5": [
           {
             "1": "LoggerService",
@@ -29,23 +29,23 @@
             "2": "COMMON_DIRECTIVES"
           },
           {
-            "2": "PeekABooComponent"
+            "2": "SpyDirective"
           }
         ]
       }
     ],
-    "6": "peek_a_boo_parent_component.dart"
+    "6": "spy_component.dart"
   },
   "type": {
-    "PeekABooParentComponent": {
+    "SpyParentComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "peek-a-boo-parent",
+      "selector": "spy-parent",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "PeekABooParentComponent",
-        "moduleUrl": "asset:lifecycle_hooks/lib/peek_a_boo_parent_component.dart",
+        "name": "SpyParentComponent",
+        "moduleUrl": "asset:lifecycle_hooks/lib/src/spy_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -82,10 +82,11 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 0,
-        "template": "    <div class=\"parent\">\n      <h2>Peek-A-Boo</h2>\n\n      <button (click)=\"toggleChild()\">\n        {{hasChild ? 'Destroy' : 'Create'}} PeekABooComponent\n      </button>\n      <button (click)=\"updateHero()\" [hidden]=\"!hasChild\">Update Hero</button>\n\n      <peek-a-boo *ngIf=\"hasChild\" [name]=\"heroName\">\n      </peek-a-boo>\n\n      <h4>-- Lifecycle Hook Log --</h4>\n      <div *ngFor=\"let msg of logs\">{{msg}}</div>\n    </div>\n    ",
-        "templateUrl": "asset:lifecycle_hooks/lib/peek_a_boo_parent_component.dart",
+        "template": "<div class=\"parent\">\n  <h2>Spy Directive</h2>\n\n  <input [(ngModel)]=\"newName\" (keyup.enter)=\"addHero()\">\n  <button (click)=\"addHero()\">Add Hero</button>\n  <button (click)=\"reset()\">Reset Heroes</button>\n\n  <p></p>\n  <div *ngFor=\"let hero of heroes\" mySpy class=\"heroes\">\n    {{hero}}\n  </div>\n  <h4>-- Spy Lifecycle Hook Log --</h4>\n  <div *ngFor=\"let msg of logs\">{{msg}}</div>\n</div>\n",
+        "templateUrl": "asset:lifecycle_hooks/lib/src/spy_component.html",
         "styles": [
-          ".parent {background: moccasin}"
+          ".parent {background: khaki}",
+          ".heroes {background: LightYellow; padding: 0 8px}"
         ],
         "styleUrls": [],
         "ngContentSelectors": []
