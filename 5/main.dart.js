@@ -9130,7 +9130,7 @@ if(x!==y){this.Q.saM(y)
 this.cx=y}this.Q.al()
 this.z.aa()
 x=z.gj7()
-w="Counter ="+(x==null?"":H.j(x))
+w="Counter="+(x==null?"":H.j(x))
 x=this.ch
 if(x!==w){this.x.textContent=w
 this.ch=w}},
@@ -10198,7 +10198,7 @@ if(x!==y){this.dx.saM(y)
 this.fx=y}this.dx.al()
 this.ch.aa()
 this.db.aa()
-x=z.gdg()?"Destroy":"Create"
+x=z.gdg()?"Destroy ":"Create "
 w=x+"PeekABooComponent"
 x=this.dy
 if(x!==w){this.z.textContent=w
