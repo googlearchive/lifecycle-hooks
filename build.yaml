@@ -1,0 +1,7 @@
+targets:
+  lifecycle_hooks:
+    builders:
+      build_web_compilers|entrypoint:
+        options:
+          compiler: dart2js
+  
