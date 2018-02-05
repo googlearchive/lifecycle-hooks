@@ -106,7 +106,7 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
     import10.appViewUtils.eventManager.addEventListener(_el_3, 'keyup.enter', eventHandler0(ctx.addHero));
     _el_3.addEventListener('input', eventHandler1(_handle_input_3_2));
     _el_3.addEventListener('blur', eventHandler0(_DefaultValueAccessor_3_4.touchHandler));
-    final subscription_0 = _NgModel_3_6.update.listen(eventHandler1(_handle_ngModelChange_3_0));
+    final subscription_0 = _NgModel_3_6.update.listen(eventHandler1(_handle_ngModelChange_3_1));
     _el_4.addEventListener('click', eventHandler0(ctx.addHero));
     _el_6.addEventListener('click', eventHandler0(ctx.reset));
     init(const [], [subscription_0]);
@@ -160,7 +160,7 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
     _appEl_12?.destroyNestedViews();
   }
 
-  void _handle_ngModelChange_3_0($event) {
+  void _handle_ngModelChange_3_1($event) {
     ctx.newName = $event;
   }
 

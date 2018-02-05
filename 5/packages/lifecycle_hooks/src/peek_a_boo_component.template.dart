@@ -28,7 +28,7 @@ const List<dynamic> styles$PeekABooComponent = const ['p._ngcontent-%COMP% { bac
 
 class ViewPeekABooComponent0 extends AppView<import1.PeekABooComponent> {
   import2.Element _el_0;
-  import2.Text _text_1;
+  import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewPeekABooComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -42,8 +42,10 @@ class ViewPeekABooComponent0 extends AppView<import1.PeekABooComponent> {
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'p', parentRenderNode);
     addShimE(_el_0);
-    _text_1 = new import2.Text('');
+    import2.Text _text_1 = new import2.Text('Now you see my hero, ');
     _el_0.append(_text_1);
+    _text_2 = new import2.Text('');
+    _el_0.append(_text_2);
     init(const [], null);
     return null;
   }
@@ -51,9 +53,9 @@ class ViewPeekABooComponent0 extends AppView<import1.PeekABooComponent> {
   @override
   void detectChangesInternal() {
     final import1.PeekABooComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate1('Now you see my hero, ', _ctx.name, '');
+    final currVal_0 = (_ctx.name ?? '');
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }

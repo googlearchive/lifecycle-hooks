@@ -35,10 +35,10 @@ const List<dynamic> styles$MyCounterComponent = const ['.counter._ngcontent-%COM
 
 class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
   import2.DivElement _el_0;
-  import2.Text _text_1;
-  import2.Element _el_2;
-  ViewContainer _appEl_4;
-  import4.NgFor _NgFor_4_7;
+  import2.Text _text_2;
+  import2.Element _el_3;
+  ViewContainer _appEl_5;
+  import4.NgFor _NgFor_5_7;
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
@@ -54,17 +54,19 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'counter';
     addShimC(_el_0);
-    _text_1 = new import2.Text('');
+    import2.Text _text_1 = new import2.Text('Counter=');
     _el_0.append(_text_1);
-    _el_2 = createAndAppend(doc, 'h5', _el_0);
-    addShimE(_el_2);
-    import2.Text _text_3 = new import2.Text('-- Counter Change Log --');
-    _el_2.append(_text_3);
-    var _anchor_4 = ngAnchor.clone(false);
-    _el_0.append(_anchor_4);
-    _appEl_4 = new ViewContainer(4, 0, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_MyCounterComponent1);
-    _NgFor_4_7 = new import4.NgFor(_appEl_4, _TemplateRef_4_6);
+    _text_2 = new import2.Text('');
+    _el_0.append(_text_2);
+    _el_3 = createAndAppend(doc, 'h5', _el_0);
+    addShimE(_el_3);
+    import2.Text _text_4 = new import2.Text('-- Counter Change Log --');
+    _el_3.append(_text_4);
+    var _anchor_5 = ngAnchor.clone(false);
+    _el_0.append(_anchor_5);
+    _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
+    TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_MyCounterComponent1);
+    _NgFor_5_7 = new import4.NgFor(_appEl_5, _TemplateRef_5_6);
     init(const [], null);
     return null;
   }
@@ -74,21 +76,21 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
     final import1.MyCounterComponent _ctx = ctx;
     final currVal_1 = _ctx.changeLog;
     if (!identical(_expr_1, currVal_1)) {
-      _NgFor_4_7.ngForOf = currVal_1;
+      _NgFor_5_7.ngForOf = currVal_1;
       _expr_1 = currVal_1;
     }
-    _NgFor_4_7.ngDoCheck();
-    _appEl_4.detectChangesInNestedViews();
-    final currVal_0 = import8.interpolate1('Counter=', _ctx.counter, '');
+    _NgFor_5_7.ngDoCheck();
+    _appEl_5.detectChangesInNestedViews();
+    final currVal_0 = import8.interpolate0(_ctx.counter);
     if (!identical(_expr_0, currVal_0)) {
-      _text_1.text = currVal_0;
+      _text_2.text = currVal_0;
       _expr_0 = currVal_0;
     }
   }
 
   @override
   void destroyInternal() {
-    _appEl_4?.destroyNestedViews();
+    _appEl_5?.destroyNestedViews();
   }
 }
 

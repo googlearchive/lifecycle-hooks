@@ -42,12 +42,12 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   import2.Element _el_1;
   import2.ButtonElement _el_3;
   import2.Text _text_4;
-  import2.ButtonElement _el_5;
-  ViewContainer _appEl_7;
-  NgIf _NgIf_7_7;
-  import2.Element _el_8;
-  ViewContainer _appEl_10;
-  import5.NgFor _NgFor_10_7;
+  import2.ButtonElement _el_6;
+  ViewContainer _appEl_8;
+  NgIf _NgIf_8_7;
+  import2.Element _el_9;
+  ViewContainer _appEl_11;
+  import5.NgFor _NgFor_11_7;
   var _expr_0;
   var _expr_1;
   var _expr_3;
@@ -72,26 +72,28 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
     addShimC(_el_3);
     _text_4 = new import2.Text('');
     _el_3.append(_text_4);
-    _el_5 = createAndAppend(doc, 'button', _el_0);
-    addShimC(_el_5);
-    import2.Text _text_6 = new import2.Text('Update Hero');
-    _el_5.append(_text_6);
-    var _anchor_7 = ngAnchor.clone(false);
-    _el_0.append(_anchor_7);
-    _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
-    TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_PeekABooParentComponent1);
-    _NgIf_7_7 = new NgIf(_appEl_7, _TemplateRef_7_6);
-    _el_8 = createAndAppend(doc, 'h4', _el_0);
-    addShimE(_el_8);
-    import2.Text _text_9 = new import2.Text('-- Lifecycle Hook Log --');
-    _el_8.append(_text_9);
-    var _anchor_10 = ngAnchor.clone(false);
-    _el_0.append(_anchor_10);
-    _appEl_10 = new ViewContainer(10, 0, this, _anchor_10);
-    TemplateRef _TemplateRef_10_6 = new TemplateRef(_appEl_10, viewFactory_PeekABooParentComponent2);
-    _NgFor_10_7 = new import5.NgFor(_appEl_10, _TemplateRef_10_6);
+    import2.Text _text_5 = new import2.Text('PeekABooComponent');
+    _el_3.append(_text_5);
+    _el_6 = createAndAppend(doc, 'button', _el_0);
+    addShimC(_el_6);
+    import2.Text _text_7 = new import2.Text('Update Hero');
+    _el_6.append(_text_7);
+    var _anchor_8 = ngAnchor.clone(false);
+    _el_0.append(_anchor_8);
+    _appEl_8 = new ViewContainer(8, 0, this, _anchor_8);
+    TemplateRef _TemplateRef_8_6 = new TemplateRef(_appEl_8, viewFactory_PeekABooParentComponent1);
+    _NgIf_8_7 = new NgIf(_appEl_8, _TemplateRef_8_6);
+    _el_9 = createAndAppend(doc, 'h4', _el_0);
+    addShimE(_el_9);
+    import2.Text _text_10 = new import2.Text('-- Lifecycle Hook Log --');
+    _el_9.append(_text_10);
+    var _anchor_11 = ngAnchor.clone(false);
+    _el_0.append(_anchor_11);
+    _appEl_11 = new ViewContainer(11, 0, this, _anchor_11);
+    TemplateRef _TemplateRef_11_6 = new TemplateRef(_appEl_11, viewFactory_PeekABooParentComponent2);
+    _NgFor_11_7 = new import5.NgFor(_appEl_11, _TemplateRef_11_6);
     _el_3.addEventListener('click', eventHandler0(ctx.toggleChild));
-    _el_5.addEventListener('click', eventHandler0(ctx.updateHero));
+    _el_6.addEventListener('click', eventHandler0(ctx.updateHero));
     init(const [], null);
     return null;
   }
@@ -99,31 +101,31 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   @override
   void detectChangesInternal() {
     final import1.PeekABooParentComponent _ctx = ctx;
-    _NgIf_7_7.ngIf = _ctx.hasChild;
+    _NgIf_8_7.ngIf = _ctx.hasChild;
     final currVal_3 = _ctx.logs;
     if (!identical(_expr_3, currVal_3)) {
-      _NgFor_10_7.ngForOf = currVal_3;
+      _NgFor_11_7.ngForOf = currVal_3;
       _expr_3 = currVal_3;
     }
-    _NgFor_10_7.ngDoCheck();
-    _appEl_7.detectChangesInNestedViews();
-    _appEl_10.detectChangesInNestedViews();
-    final currVal_0 = import9.interpolate1('', (_ctx.hasChild ? 'Destroy ' : 'Create '), 'PeekABooComponent');
+    _NgFor_11_7.ngDoCheck();
+    _appEl_8.detectChangesInNestedViews();
+    _appEl_11.detectChangesInNestedViews();
+    final currVal_0 = import9.interpolate0((_ctx.hasChild ? 'Destroy ' : 'Create '));
     if (!identical(_expr_0, currVal_0)) {
       _text_4.text = currVal_0;
       _expr_0 = currVal_0;
     }
     final bool currVal_1 = !_ctx.hasChild;
     if (!identical(_expr_1, currVal_1)) {
-      setProp(_el_5, 'hidden', currVal_1);
+      setProp(_el_6, 'hidden', currVal_1);
       _expr_1 = currVal_1;
     }
   }
 
   @override
   void destroyInternal() {
-    _appEl_7?.destroyNestedViews();
-    _appEl_10?.destroyNestedViews();
+    _appEl_8?.destroyNestedViews();
+    _appEl_11?.destroyNestedViews();
   }
 }
 
