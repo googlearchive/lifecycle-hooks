@@ -15,7 +15,6 @@ import 'src/do_check_component.dart';
 import 'src/on_changes_component.dart';
 import 'src/peek_a_boo_parent_component.dart';
 import 'src/spy_component.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'src/after_content_component.template.dart' as _ref1;
@@ -25,7 +24,6 @@ import 'src/do_check_component.template.dart' as _ref4;
 import 'src/on_changes_component.template.dart' as _ref5;
 import 'src/peek_a_boo_parent_component.template.dart' as _ref6;
 import 'src/spy_component.template.dart' as _ref7;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'app_component.dart' as import1;
 import 'dart:html' as import2;
@@ -360,6 +358,8 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(AppComponent, AppComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
@@ -368,8 +368,4 @@ void initReflector() {
   _ref5.initReflector();
   _ref6.initReflector();
   _ref7.initReflector();
-  _ngRef.registerComponent(
-    AppComponent,
-    AppComponentNgFactory,
-  );
 }

@@ -10,12 +10,10 @@ export 'counter_component.dart';
 import 'package:angular/angular.dart';
 import 'logger_service.dart';
 import 'spy_directive.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'logger_service.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 import 'spy_directive.template.dart' as _ref2;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'counter_component.dart' as import1;
 import 'dart:html' as import2;
@@ -384,15 +382,10 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(MyCounterComponent, MyCounterComponentNgFactory);
+  _ngRef.registerComponent(CounterParentComponent, CounterParentComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
   _ref2.initReflector();
-  _ngRef.registerComponent(
-    MyCounterComponent,
-    MyCounterComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    CounterParentComponent,
-    CounterParentComponentNgFactory,
-  );
 }

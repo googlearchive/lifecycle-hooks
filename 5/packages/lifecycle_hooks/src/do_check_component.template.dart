@@ -9,11 +9,9 @@ import 'do_check_component.dart';
 export 'do_check_component.dart';
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
 import 'package:angular_forms/angular_forms.template.dart' as _ref1;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'do_check_component.dart' as import1;
 import 'dart:html' as import2;
@@ -422,14 +420,9 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(DoCheckComponent, DoCheckComponentNgFactory);
+  _ngRef.registerComponent(DoCheckParentComponent, DoCheckParentComponentNgFactory);
   _ref0.initReflector();
   _ref1.initReflector();
-  _ngRef.registerComponent(
-    DoCheckComponent,
-    DoCheckComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    DoCheckParentComponent,
-    DoCheckParentComponentNgFactory,
-  );
 }

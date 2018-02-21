@@ -9,7 +9,6 @@ import 'spy_directive.dart';
 export 'spy_directive.dart';
 import 'package:angular/angular.dart';
 import 'logger_service.dart';
-// Required for initReflector().
 import 'logger_service.template.dart' as _ref0;
 import 'package:angular/angular.template.dart' as _ref1;
 
@@ -19,6 +18,7 @@ void initReflector() {
     return;
   }
   _visited = true;
+
   _ref0.initReflector();
   _ref1.initReflector();
 }
