@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -24,8 +22,8 @@ import 'package:angular/src/core/linker/app_view_utils.dart' as import8;
 import 'package:angular/angular.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
 import 'dart:core';
-import 'package:angular/src/core/linker/query_list.dart' as import12;
-import 'package:angular_forms/src/directives/default_value_accessor.dart' as import13;
+import 'package:angular_forms/src/directives/default_value_accessor.dart' as import12;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import13;
 import 'package:angular_forms/src/directives/ng_model.dart' as import14;
 import 'package:angular/src/core/di/opaque_token.dart' as import15;
 import 'package:angular_forms/src/directives/control_value_accessor.dart' as import16;
@@ -40,7 +38,7 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
   import2.Text _text_4;
   import2.Element _el_5;
   ViewContainer _appEl_7;
-  import4.NgFor _NgFor_7_7;
+  import4.NgFor _NgFor_7_9;
   var _expr_0;
   var _expr_1;
   var _expr_2;
@@ -72,8 +70,8 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
     var _anchor_7 = ngAnchor.clone(false);
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
-    TemplateRef _TemplateRef_7_6 = new TemplateRef(_appEl_7, viewFactory_DoCheckComponent1);
-    _NgFor_7_7 = new import4.NgFor(_appEl_7, _TemplateRef_7_6);
+    TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_DoCheckComponent1);
+    _NgFor_7_9 = new import4.NgFor(_appEl_7, _TemplateRef_7_8);
     init(const [], null);
     return null;
   }
@@ -83,10 +81,10 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
     final import1.DoCheckComponent _ctx = ctx;
     final currVal_2 = _ctx.changeLog;
     if (!identical(_expr_2, currVal_2)) {
-      _NgFor_7_7.ngForOf = currVal_2;
+      _NgFor_7_9.ngForOf = currVal_2;
       _expr_2 = currVal_2;
     }
-    _NgFor_7_7.ngDoCheck();
+    _NgFor_7_9.ngDoCheck();
     _appEl_7.detectChangesInNestedViews();
     final currVal_0 = import8.interpolate0(_ctx.hero.name);
     if (!identical(_expr_0, currVal_0)) {
@@ -147,29 +145,21 @@ const List<dynamic> styles$DoCheckComponentHost = const [];
 
 class _ViewDoCheckComponentHost0 extends AppView<dynamic> {
   ViewDoCheckComponent0 _compView_0;
-  import1.DoCheckComponent _DoCheckComponent_0_4;
+  import1.DoCheckComponent _DoCheckComponent_0_5;
   _ViewDoCheckComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DoCheckComponent_0_4 = new import1.DoCheckComponent();
-    _compView_0.create(_DoCheckComponent_0_4, projectableNodes);
+    _DoCheckComponent_0_5 = new import1.DoCheckComponent();
+    _compView_0.create(_DoCheckComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.DoCheckComponent>(0, this, rootEl, _DoCheckComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.DoCheckComponent) && (0 == nodeIndex))) {
-      return _DoCheckComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.DoCheckComponent>(0, this, rootEl, _DoCheckComponent_0_5);
   }
 
   @override
   void detectChangesInternal() {
-    _DoCheckComponent_0_4.ngDoCheck();
+    _DoCheckComponent_0_5.ngDoCheck();
     _compView_0.detectChanges();
   }
 
@@ -187,7 +177,7 @@ const ComponentFactory<import1.DoCheckComponent> DoCheckComponentNgFactory = con
 const List<dynamic> styles$DoCheckParentComponent = const ['.parent._ngcontent-%COMP% { background:lavender; }'];
 
 class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent> {
-  final import12.QueryList _viewQuery_DoCheckComponent_0 = new import12.QueryList();
+  bool _query_DoCheckComponent_1_0_isDirty = true;
   import2.DivElement _el_0;
   import2.Element _el_1;
   import2.Text _text_2;
@@ -196,21 +186,21 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   import2.Element _el_5;
   import2.Element _el_7;
   import2.InputElement _el_8;
-  import13.DefaultValueAccessor _DefaultValueAccessor_8_4;
-  List<dynamic> _NgValueAccessor_8_5;
-  import14.NgModel _NgModel_8_6;
+  import12.DefaultValueAccessor _DefaultValueAccessor_8_5;
+  List<import13.ControlValueAccessor<dynamic>> _NgValueAccessor_8_6;
+  import14.NgModel _NgModel_8_7;
   import2.Element _el_9;
   import2.Element _el_10;
   import2.Element _el_12;
   import2.InputElement _el_13;
-  import13.DefaultValueAccessor _DefaultValueAccessor_13_4;
-  List<dynamic> _NgValueAccessor_13_5;
-  import14.NgModel _NgModel_13_6;
+  import12.DefaultValueAccessor _DefaultValueAccessor_13_5;
+  List<import13.ControlValueAccessor<dynamic>> _NgValueAccessor_13_6;
+  import14.NgModel _NgModel_13_7;
   import2.Element _el_14;
   import2.ButtonElement _el_15;
   import2.Element _el_17;
   ViewDoCheckComponent0 _compView_17;
-  import1.DoCheckComponent _DoCheckComponent_17_4;
+  import1.DoCheckComponent _DoCheckComponent_17_5;
   var _expr_0;
   var _expr_3;
   String _expr_4;
@@ -243,9 +233,9 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     addShimE(_el_7);
     _el_8 = createAndAppend(doc, 'input', _el_7);
     addShimC(_el_8);
-    _DefaultValueAccessor_8_4 = new import13.DefaultValueAccessor(_el_8);
-    _NgValueAccessor_8_5 = [_DefaultValueAccessor_8_4];
-    _NgModel_8_6 = new import14.NgModel(null, _NgValueAccessor_8_5);
+    _DefaultValueAccessor_8_5 = new import12.DefaultValueAccessor(_el_8);
+    _NgValueAccessor_8_6 = [_DefaultValueAccessor_8_5];
+    _NgModel_8_7 = new import14.NgModel(null, _NgValueAccessor_8_6);
     _el_9 = createAndAppend(doc, 'tr', _el_3);
     addShimE(_el_9);
     _el_10 = createAndAppend(doc, 'td', _el_9);
@@ -256,9 +246,9 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     addShimE(_el_12);
     _el_13 = createAndAppend(doc, 'input', _el_12);
     addShimC(_el_13);
-    _DefaultValueAccessor_13_4 = new import13.DefaultValueAccessor(_el_13);
-    _NgValueAccessor_13_5 = [_DefaultValueAccessor_13_4];
-    _NgModel_13_6 = new import14.NgModel(null, _NgValueAccessor_13_5);
+    _DefaultValueAccessor_13_5 = new import12.DefaultValueAccessor(_el_13);
+    _NgValueAccessor_13_6 = [_DefaultValueAccessor_13_5];
+    _NgModel_13_7 = new import14.NgModel(null, _NgValueAccessor_13_6);
     _el_14 = createAndAppend(doc, 'p', _el_0);
     addShimE(_el_14);
     _el_15 = createAndAppend(doc, 'button', _el_14);
@@ -269,43 +259,39 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     _el_17 = _compView_17.rootEl;
     _el_0.append(_el_17);
     addShimC(_el_17);
-    _DoCheckComponent_17_4 = new import1.DoCheckComponent();
-    _compView_17.create(_DoCheckComponent_17_4, []);
+    _DoCheckComponent_17_5 = new import1.DoCheckComponent();
+    _compView_17.create(_DoCheckComponent_17_5, []);
     _el_8.addEventListener('input', eventHandler1(_handle_input_8_1));
-    _el_8.addEventListener('blur', eventHandler0(_DefaultValueAccessor_8_4.touchHandler));
-    final subscription_0 = _NgModel_8_6.update.listen(eventHandler1(_handle_ngModelChange_8_0));
+    _el_8.addEventListener('blur', eventHandler0(_DefaultValueAccessor_8_5.touchHandler));
+    final subscription_0 = _NgModel_8_7.update.listen(eventHandler1(_handle_ngModelChange_8_0));
     _el_13.addEventListener('input', eventHandler1(_handle_input_13_1));
-    _el_13.addEventListener('blur', eventHandler0(_DefaultValueAccessor_13_4.touchHandler));
-    final subscription_1 = _NgModel_13_6.update.listen(eventHandler1(_handle_ngModelChange_13_0));
+    _el_13.addEventListener('blur', eventHandler0(_DefaultValueAccessor_13_5.touchHandler));
+    final subscription_1 = _NgModel_13_7.update.listen(eventHandler1(_handle_ngModelChange_13_0));
     _el_15.addEventListener('click', eventHandler0(ctx.reset));
-    _viewQuery_DoCheckComponent_0.reset([_DoCheckComponent_17_4]);
-    ctx.childView = _viewQuery_DoCheckComponent_0.first;
+    ctx.childView = _DoCheckComponent_17_5;
     init(const [], [subscription_0, subscription_1]);
     return null;
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import13.DefaultValueAccessor) && (8 == nodeIndex))) {
-      return _DefaultValueAccessor_8_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (8 == nodeIndex))) {
+      return _DefaultValueAccessor_8_5;
     }
-    if ((identical(token, const import15.OpaqueToken<import16.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (8 == nodeIndex))) {
-      return _NgValueAccessor_8_5;
+    if ((identical(token, const import15.MultiToken<import16.ControlValueAccessor>('NgValueAccessor')) && (8 == nodeIndex))) {
+      return _NgValueAccessor_8_6;
     }
     if (((identical(token, import14.NgModel) || identical(token, import17.NgControl)) && (8 == nodeIndex))) {
-      return _NgModel_8_6;
+      return _NgModel_8_7;
     }
-    if ((identical(token, import13.DefaultValueAccessor) && (13 == nodeIndex))) {
-      return _DefaultValueAccessor_13_4;
+    if ((identical(token, import12.DefaultValueAccessor) && (13 == nodeIndex))) {
+      return _DefaultValueAccessor_13_5;
     }
-    if ((identical(token, const import15.OpaqueToken<import16.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (13 == nodeIndex))) {
-      return _NgValueAccessor_13_5;
+    if ((identical(token, const import15.MultiToken<import16.ControlValueAccessor>('NgValueAccessor')) && (13 == nodeIndex))) {
+      return _NgValueAccessor_13_6;
     }
     if (((identical(token, import14.NgModel) || identical(token, import17.NgControl)) && (13 == nodeIndex))) {
-      return _NgModel_13_6;
-    }
-    if ((identical(token, import1.DoCheckComponent) && (17 == nodeIndex))) {
-      return _DoCheckComponent_17_4;
+      return _NgModel_13_7;
     }
     return notFoundResult;
   }
@@ -316,28 +302,28 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_8_6.model = _ctx.power;
-    _NgModel_8_6.ngAfterChanges();
+    _NgModel_8_7.model = _ctx.power;
+    _NgModel_8_7.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_8_6.ngOnInit();
+      _NgModel_8_7.ngOnInit();
     }
     changed = false;
-    _NgModel_13_6.model = _ctx.hero.name;
-    _NgModel_13_6.ngAfterChanges();
+    _NgModel_13_7.model = _ctx.hero.name;
+    _NgModel_13_7.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_13_6.ngOnInit();
+      _NgModel_13_7.ngOnInit();
     }
     final currVal_3 = _ctx.hero;
     if (!identical(_expr_3, currVal_3)) {
-      _DoCheckComponent_17_4.hero = currVal_3;
+      _DoCheckComponent_17_5.hero = currVal_3;
       _expr_3 = currVal_3;
     }
     final currVal_4 = _ctx.power;
     if (!identical(_expr_4, currVal_4)) {
-      _DoCheckComponent_17_4.power = currVal_4;
+      _DoCheckComponent_17_5.power = currVal_4;
       _expr_4 = currVal_4;
     }
-    _DoCheckComponent_17_4.ngDoCheck();
+    _DoCheckComponent_17_5.ngDoCheck();
     final currVal_0 = (_ctx.title ?? '');
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
@@ -356,7 +342,7 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   }
 
   void _handle_input_8_1($event) {
-    _DefaultValueAccessor_8_4.onChange($event.target.value);
+    _DefaultValueAccessor_8_5.onChange($event.target.value);
   }
 
   void _handle_ngModelChange_13_0($event) {
@@ -364,7 +350,7 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   }
 
   void _handle_input_13_1($event) {
-    _DefaultValueAccessor_13_4.onChange($event.target.value);
+    _DefaultValueAccessor_13_5.onChange($event.target.value);
   }
 }
 
@@ -376,24 +362,16 @@ const List<dynamic> styles$DoCheckParentComponentHost = const [];
 
 class _ViewDoCheckParentComponentHost0 extends AppView<dynamic> {
   ViewDoCheckParentComponent0 _compView_0;
-  import1.DoCheckParentComponent _DoCheckParentComponent_0_4;
+  import1.DoCheckParentComponent _DoCheckParentComponent_0_5;
   _ViewDoCheckParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckParentComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _DoCheckParentComponent_0_4 = new import1.DoCheckParentComponent();
-    _compView_0.create(_DoCheckParentComponent_0_4, projectableNodes);
+    _DoCheckParentComponent_0_5 = new import1.DoCheckParentComponent();
+    _compView_0.create(_DoCheckParentComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.DoCheckParentComponent>(0, this, rootEl, _DoCheckParentComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.DoCheckParentComponent) && (0 == nodeIndex))) {
-      return _DoCheckParentComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.DoCheckParentComponent>(0, this, rootEl, _DoCheckParentComponent_0_5);
   }
 
   @override

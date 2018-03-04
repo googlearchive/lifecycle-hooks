@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -42,10 +40,10 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   import2.Text _text_4;
   import2.ButtonElement _el_6;
   ViewContainer _appEl_8;
-  NgIf _NgIf_8_7;
+  NgIf _NgIf_8_9;
   import2.Element _el_9;
   ViewContainer _appEl_11;
-  import5.NgFor _NgFor_11_7;
+  import5.NgFor _NgFor_11_9;
   var _expr_0;
   var _expr_1;
   var _expr_3;
@@ -79,8 +77,8 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
     var _anchor_8 = ngAnchor.clone(false);
     _el_0.append(_anchor_8);
     _appEl_8 = new ViewContainer(8, 0, this, _anchor_8);
-    TemplateRef _TemplateRef_8_6 = new TemplateRef(_appEl_8, viewFactory_PeekABooParentComponent1);
-    _NgIf_8_7 = new NgIf(_appEl_8, _TemplateRef_8_6);
+    TemplateRef _TemplateRef_8_8 = new TemplateRef(_appEl_8, viewFactory_PeekABooParentComponent1);
+    _NgIf_8_9 = new NgIf(_appEl_8, _TemplateRef_8_8);
     _el_9 = createAndAppend(doc, 'h4', _el_0);
     addShimE(_el_9);
     import2.Text _text_10 = new import2.Text('-- Lifecycle Hook Log --');
@@ -88,8 +86,8 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
     var _anchor_11 = ngAnchor.clone(false);
     _el_0.append(_anchor_11);
     _appEl_11 = new ViewContainer(11, 0, this, _anchor_11);
-    TemplateRef _TemplateRef_11_6 = new TemplateRef(_appEl_11, viewFactory_PeekABooParentComponent2);
-    _NgFor_11_7 = new import5.NgFor(_appEl_11, _TemplateRef_11_6);
+    TemplateRef _TemplateRef_11_8 = new TemplateRef(_appEl_11, viewFactory_PeekABooParentComponent2);
+    _NgFor_11_9 = new import5.NgFor(_appEl_11, _TemplateRef_11_8);
     _el_3.addEventListener('click', eventHandler0(ctx.toggleChild));
     _el_6.addEventListener('click', eventHandler0(ctx.updateHero));
     init(const [], null);
@@ -99,13 +97,13 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   @override
   void detectChangesInternal() {
     final import1.PeekABooParentComponent _ctx = ctx;
-    _NgIf_8_7.ngIf = _ctx.hasChild;
+    _NgIf_8_9.ngIf = _ctx.hasChild;
     final currVal_3 = _ctx.logs;
     if (!identical(_expr_3, currVal_3)) {
-      _NgFor_11_7.ngForOf = currVal_3;
+      _NgFor_11_9.ngForOf = currVal_3;
       _expr_3 = currVal_3;
     }
-    _NgFor_11_7.ngDoCheck();
+    _NgFor_11_9.ngDoCheck();
     _appEl_8.detectChangesInNestedViews();
     _appEl_11.detectChangesInNestedViews();
     final currVal_0 = import9.interpolate0((_ctx.hasChild ? 'Destroy ' : 'Create '));
@@ -134,7 +132,7 @@ AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent0(Ap
 class _ViewPeekABooParentComponent1 extends AppView<import1.PeekABooParentComponent> {
   import2.Element _el_0;
   import12.ViewPeekABooComponent0 _compView_0;
-  import13.PeekABooComponent _PeekABooComponent_0_4;
+  import13.PeekABooComponent _PeekABooComponent_0_5;
   String _expr_0;
   _ViewPeekABooParentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewPeekABooParentComponent0._renderType;
@@ -144,18 +142,10 @@ class _ViewPeekABooParentComponent1 extends AppView<import1.PeekABooParentCompon
     _compView_0 = new import12.ViewPeekABooComponent0(this, 0);
     _el_0 = _compView_0.rootEl;
     addShimC(_el_0);
-    _PeekABooComponent_0_4 = new import13.PeekABooComponent(parentView.parentView.injectorGet(import14.LoggerService, parentView.viewData.parentIndex));
-    _compView_0.create(_PeekABooComponent_0_4, []);
+    _PeekABooComponent_0_5 = new import13.PeekABooComponent(parentView.parentView.injectorGet(import14.LoggerService, parentView.viewData.parentIndex));
+    _compView_0.create(_PeekABooComponent_0_5, []);
     init0(_el_0);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import13.PeekABooComponent) && (0 == nodeIndex))) {
-      return _PeekABooComponent_0_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -166,33 +156,33 @@ class _ViewPeekABooParentComponent1 extends AppView<import1.PeekABooParentCompon
     changes = null;
     final currVal_0 = _ctx.heroName;
     if (!identical(_expr_0, currVal_0)) {
-      _PeekABooComponent_0_4.name = currVal_0;
+      _PeekABooComponent_0_5.name = currVal_0;
       changes ??= <String, SimpleChange>{};
       changes['name'] = new SimpleChange(_expr_0, currVal_0);
       _expr_0 = currVal_0;
     }
     if (!identical(changes, null)) {
-      _PeekABooComponent_0_4.ngOnChanges(changes);
+      _PeekABooComponent_0_5.ngOnChanges(changes);
     }
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngOnInit();
+      _PeekABooComponent_0_5.ngOnInit();
     }
-    _PeekABooComponent_0_4.ngDoCheck();
+    _PeekABooComponent_0_5.ngDoCheck();
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngAfterContentInit();
+      _PeekABooComponent_0_5.ngAfterContentInit();
     }
-    _PeekABooComponent_0_4.ngAfterContentChecked();
+    _PeekABooComponent_0_5.ngAfterContentChecked();
     _compView_0.detectChanges();
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngAfterViewInit();
+      _PeekABooComponent_0_5.ngAfterViewInit();
     }
-    _PeekABooComponent_0_4.ngAfterViewChecked();
+    _PeekABooComponent_0_5.ngAfterViewChecked();
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _PeekABooComponent_0_4.ngOnDestroy();
+    _PeekABooComponent_0_5.ngOnDestroy();
   }
 }
 
@@ -237,27 +227,24 @@ const List<dynamic> styles$PeekABooParentComponentHost = const [];
 
 class _ViewPeekABooParentComponentHost0 extends AppView<dynamic> {
   ViewPeekABooParentComponent0 _compView_0;
-  import14.LoggerService _LoggerService_0_4;
-  import1.PeekABooParentComponent _PeekABooParentComponent_0_5;
+  import14.LoggerService _LoggerService_0_5;
+  import1.PeekABooParentComponent _PeekABooParentComponent_0_6;
   _ViewPeekABooParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewPeekABooParentComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _LoggerService_0_4 = new import14.LoggerService();
-    _PeekABooParentComponent_0_5 = new import1.PeekABooParentComponent(_LoggerService_0_4);
-    _compView_0.create(_PeekABooParentComponent_0_5, projectableNodes);
+    _LoggerService_0_5 = new import14.LoggerService();
+    _PeekABooParentComponent_0_6 = new import1.PeekABooParentComponent(_LoggerService_0_5);
+    _compView_0.create(_PeekABooParentComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.PeekABooParentComponent>(0, this, rootEl, _PeekABooParentComponent_0_5);
+    return new ComponentRef<import1.PeekABooParentComponent>(0, this, rootEl, _PeekABooParentComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import14.LoggerService) && (0 == nodeIndex))) {
-      return _LoggerService_0_4;
-    }
-    if ((identical(token, import1.PeekABooParentComponent) && (0 == nodeIndex))) {
-      return _PeekABooParentComponent_0_5;
+      return _LoggerService_0_5;
     }
     return notFoundResult;
   }

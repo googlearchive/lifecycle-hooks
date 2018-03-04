@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -36,7 +34,7 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
   import2.Text _text_2;
   import2.Element _el_3;
   ViewContainer _appEl_5;
-  import4.NgFor _NgFor_5_7;
+  import4.NgFor _NgFor_5_9;
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
@@ -63,8 +61,8 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
     var _anchor_5 = ngAnchor.clone(false);
     _el_0.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
-    TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_MyCounterComponent1);
-    _NgFor_5_7 = new import4.NgFor(_appEl_5, _TemplateRef_5_6);
+    TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MyCounterComponent1);
+    _NgFor_5_9 = new import4.NgFor(_appEl_5, _TemplateRef_5_8);
     init(const [], null);
     return null;
   }
@@ -74,10 +72,10 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
     final import1.MyCounterComponent _ctx = ctx;
     final currVal_1 = _ctx.changeLog;
     if (!identical(_expr_1, currVal_1)) {
-      _NgFor_5_7.ngForOf = currVal_1;
+      _NgFor_5_9.ngForOf = currVal_1;
       _expr_1 = currVal_1;
     }
-    _NgFor_5_7.ngDoCheck();
+    _NgFor_5_9.ngDoCheck();
     _appEl_5.detectChangesInNestedViews();
     final currVal_0 = import8.interpolate0(_ctx.counter);
     if (!identical(_expr_0, currVal_0)) {
@@ -98,7 +96,7 @@ AppView<import1.MyCounterComponent> viewFactory_MyCounterComponent0(AppView<dyna
 
 class _ViewMyCounterComponent1 extends AppView<import1.MyCounterComponent> {
   import2.DivElement _el_0;
-  import11.SpyDirective _SpyDirective_0_4;
+  import11.SpyDirective _SpyDirective_0_5;
   import2.Text _text_1;
   var _expr_0;
   _ViewMyCounterComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -110,7 +108,7 @@ class _ViewMyCounterComponent1 extends AppView<import1.MyCounterComponent> {
     _el_0 = doc.createElement('div');
     createAttr(_el_0, 'mySpy', '');
     addShimC(_el_0);
-    _SpyDirective_0_4 = new import11.SpyDirective(parentView.parentView.injectorGet(import12.LoggerService, parentView.viewData.parentIndex));
+    _SpyDirective_0_5 = new import11.SpyDirective(parentView.parentView.injectorGet(import12.LoggerService, parentView.viewData.parentIndex));
     _text_1 = new import2.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
@@ -118,19 +116,11 @@ class _ViewMyCounterComponent1 extends AppView<import1.MyCounterComponent> {
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import11.SpyDirective) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _SpyDirective_0_4;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     final String local_chg = locals['\$implicit'];
     if (firstCheck) {
-      _SpyDirective_0_4.ngOnInit();
+      _SpyDirective_0_5.ngOnInit();
     }
     final currVal_0 = import8.interpolate0(local_chg);
     if (!identical(_expr_0, currVal_0)) {
@@ -141,7 +131,7 @@ class _ViewMyCounterComponent1 extends AppView<import1.MyCounterComponent> {
 
   @override
   void destroyInternal() {
-    _SpyDirective_0_4.ngOnDestroy();
+    _SpyDirective_0_5.ngOnDestroy();
   }
 }
 
@@ -153,24 +143,16 @@ const List<dynamic> styles$MyCounterComponentHost = const [];
 
 class _ViewMyCounterComponentHost0 extends AppView<dynamic> {
   ViewMyCounterComponent0 _compView_0;
-  import1.MyCounterComponent _MyCounterComponent_0_4;
+  import1.MyCounterComponent _MyCounterComponent_0_5;
   _ViewMyCounterComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMyCounterComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _MyCounterComponent_0_4 = new import1.MyCounterComponent();
-    _compView_0.create(_MyCounterComponent_0_4, projectableNodes);
+    _MyCounterComponent_0_5 = new import1.MyCounterComponent();
+    _compView_0.create(_MyCounterComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.MyCounterComponent>(0, this, rootEl, _MyCounterComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.MyCounterComponent) && (0 == nodeIndex))) {
-      return _MyCounterComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.MyCounterComponent>(0, this, rootEl, _MyCounterComponent_0_5);
   }
 
   @override
@@ -200,10 +182,10 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
   import2.ButtonElement _el_5;
   import2.Element _el_7;
   ViewMyCounterComponent0 _compView_7;
-  import1.MyCounterComponent _MyCounterComponent_7_4;
+  import1.MyCounterComponent _MyCounterComponent_7_5;
   import2.Element _el_8;
   ViewContainer _appEl_10;
-  import4.NgFor _NgFor_10_7;
+  import4.NgFor _NgFor_10_9;
   num _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
@@ -235,8 +217,8 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
     _el_7 = _compView_7.rootEl;
     _el_0.append(_el_7);
     addShimC(_el_7);
-    _MyCounterComponent_7_4 = new import1.MyCounterComponent();
-    _compView_7.create(_MyCounterComponent_7_4, []);
+    _MyCounterComponent_7_5 = new import1.MyCounterComponent();
+    _compView_7.create(_MyCounterComponent_7_5, []);
     _el_8 = createAndAppend(doc, 'h4', _el_0);
     addShimE(_el_8);
     import2.Text _text_9 = new import2.Text('-- Spy Lifecycle Hook Log --');
@@ -244,20 +226,12 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
     var _anchor_10 = ngAnchor.clone(false);
     _el_0.append(_anchor_10);
     _appEl_10 = new ViewContainer(10, 0, this, _anchor_10);
-    TemplateRef _TemplateRef_10_6 = new TemplateRef(_appEl_10, viewFactory_CounterParentComponent1);
-    _NgFor_10_7 = new import4.NgFor(_appEl_10, _TemplateRef_10_6);
+    TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_CounterParentComponent1);
+    _NgFor_10_9 = new import4.NgFor(_appEl_10, _TemplateRef_10_8);
     _el_3.addEventListener('click', eventHandler0(ctx.updateCounter));
     _el_5.addEventListener('click', eventHandler0(ctx.reset));
     init(const [], null);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.MyCounterComponent) && (7 == nodeIndex))) {
-      return _MyCounterComponent_7_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -267,20 +241,20 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
     changes = null;
     final currVal_0 = _ctx.value;
     if (!identical(_expr_0, currVal_0)) {
-      _MyCounterComponent_7_4.counter = currVal_0;
+      _MyCounterComponent_7_5.counter = currVal_0;
       changes ??= <String, SimpleChange>{};
       changes['counter'] = new SimpleChange(_expr_0, currVal_0);
       _expr_0 = currVal_0;
     }
     if (!identical(changes, null)) {
-      _MyCounterComponent_7_4.ngOnChanges(changes);
+      _MyCounterComponent_7_5.ngOnChanges(changes);
     }
     final currVal_1 = _ctx.logs;
     if (!identical(_expr_1, currVal_1)) {
-      _NgFor_10_7.ngForOf = currVal_1;
+      _NgFor_10_9.ngForOf = currVal_1;
       _expr_1 = currVal_1;
     }
-    _NgFor_10_7.ngDoCheck();
+    _NgFor_10_9.ngDoCheck();
     _appEl_10.detectChangesInNestedViews();
     _compView_7.detectChanges();
   }
@@ -333,27 +307,24 @@ const List<dynamic> styles$CounterParentComponentHost = const [];
 
 class _ViewCounterParentComponentHost0 extends AppView<dynamic> {
   ViewCounterParentComponent0 _compView_0;
-  import12.LoggerService _LoggerService_0_4;
-  import1.CounterParentComponent _CounterParentComponent_0_5;
+  import12.LoggerService _LoggerService_0_5;
+  import1.CounterParentComponent _CounterParentComponent_0_6;
   _ViewCounterParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewCounterParentComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _LoggerService_0_4 = new import12.LoggerService();
-    _CounterParentComponent_0_5 = new import1.CounterParentComponent(_LoggerService_0_4);
-    _compView_0.create(_CounterParentComponent_0_5, projectableNodes);
+    _LoggerService_0_5 = new import12.LoggerService();
+    _CounterParentComponent_0_6 = new import1.CounterParentComponent(_LoggerService_0_5);
+    _compView_0.create(_CounterParentComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.CounterParentComponent>(0, this, rootEl, _CounterParentComponent_0_5);
+    return new ComponentRef<import1.CounterParentComponent>(0, this, rootEl, _CounterParentComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import12.LoggerService) && (0 == nodeIndex))) {
-      return _LoggerService_0_4;
-    }
-    if ((identical(token, import1.CounterParentComponent) && (0 == nodeIndex))) {
-      return _CounterParentComponent_0_5;
+      return _LoggerService_0_5;
     }
     return notFoundResult;
   }

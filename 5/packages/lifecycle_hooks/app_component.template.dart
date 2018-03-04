@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -70,42 +68,42 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.AnchorElement _el_24;
   import2.Element _el_25;
   import3.ViewPeekABooParentComponent0 _compView_25;
-  import4.LoggerService _LoggerService_25_4;
-  import5.PeekABooParentComponent _PeekABooParentComponent_25_5;
+  import4.LoggerService _LoggerService_25_5;
+  import5.PeekABooParentComponent _PeekABooParentComponent_25_6;
   import2.AnchorElement _el_26;
   import2.AnchorElement _el_28;
   import2.Element _el_29;
   import6.ViewSpyParentComponent0 _compView_29;
-  import4.LoggerService _LoggerService_29_4;
-  import7.SpyParentComponent _SpyParentComponent_29_5;
+  import4.LoggerService _LoggerService_29_5;
+  import7.SpyParentComponent _SpyParentComponent_29_6;
   import2.AnchorElement _el_30;
   import2.AnchorElement _el_32;
   import2.Element _el_33;
   import8.ViewOnChangesParentComponent0 _compView_33;
-  import9.OnChangesParentComponent _OnChangesParentComponent_33_4;
+  import9.OnChangesParentComponent _OnChangesParentComponent_33_5;
   import2.AnchorElement _el_34;
   import2.AnchorElement _el_36;
   import2.Element _el_37;
   import10.ViewDoCheckParentComponent0 _compView_37;
-  import11.DoCheckParentComponent _DoCheckParentComponent_37_4;
+  import11.DoCheckParentComponent _DoCheckParentComponent_37_5;
   import2.AnchorElement _el_38;
   import2.AnchorElement _el_40;
   import2.Element _el_41;
   import12.ViewAfterViewParentComponent0 _compView_41;
-  import4.LoggerService _LoggerService_41_4;
-  import13.AfterViewParentComponent _AfterViewParentComponent_41_5;
+  import4.LoggerService _LoggerService_41_5;
+  import13.AfterViewParentComponent _AfterViewParentComponent_41_6;
   import2.AnchorElement _el_42;
   import2.AnchorElement _el_44;
   import2.Element _el_45;
   import14.ViewAfterContentParentComponent0 _compView_45;
-  import4.LoggerService _LoggerService_45_4;
-  import15.AfterContentParentComponent _AfterContentParentComponent_45_5;
+  import4.LoggerService _LoggerService_45_5;
+  import15.AfterContentParentComponent _AfterContentParentComponent_45_6;
   import2.AnchorElement _el_46;
   import2.AnchorElement _el_48;
   import2.Element _el_49;
   import16.ViewCounterParentComponent0 _compView_49;
-  import4.LoggerService _LoggerService_49_4;
-  import17.CounterParentComponent _CounterParentComponent_49_5;
+  import4.LoggerService _LoggerService_49_5;
+  import17.CounterParentComponent _CounterParentComponent_49_6;
   import2.AnchorElement _el_50;
   static RenderComponentType _renderType;
   ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import19.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -162,9 +160,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_25 = new import3.ViewPeekABooParentComponent0(this, 25);
     _el_25 = _compView_25.rootEl;
     parentRenderNode.append(_el_25);
-    _LoggerService_25_4 = new import4.LoggerService();
-    _PeekABooParentComponent_25_5 = new import5.PeekABooParentComponent(_LoggerService_25_4);
-    _compView_25.create(_PeekABooParentComponent_25_5, []);
+    _LoggerService_25_5 = new import4.LoggerService();
+    _PeekABooParentComponent_25_6 = new import5.PeekABooParentComponent(_LoggerService_25_5);
+    _compView_25.create(_PeekABooParentComponent_25_6, []);
     _el_26 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_26, 'href', '#top');
     import2.Text _text_27 = new import2.Text('back to top');
@@ -174,9 +172,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_29 = new import6.ViewSpyParentComponent0(this, 29);
     _el_29 = _compView_29.rootEl;
     parentRenderNode.append(_el_29);
-    _LoggerService_29_4 = new import4.LoggerService();
-    _SpyParentComponent_29_5 = new import7.SpyParentComponent(_LoggerService_29_4);
-    _compView_29.create(_SpyParentComponent_29_5, []);
+    _LoggerService_29_5 = new import4.LoggerService();
+    _SpyParentComponent_29_6 = new import7.SpyParentComponent(_LoggerService_29_5);
+    _compView_29.create(_SpyParentComponent_29_6, []);
     _el_30 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_30, 'href', '#top');
     import2.Text _text_31 = new import2.Text('back to top');
@@ -186,8 +184,8 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_33 = new import8.ViewOnChangesParentComponent0(this, 33);
     _el_33 = _compView_33.rootEl;
     parentRenderNode.append(_el_33);
-    _OnChangesParentComponent_33_4 = new import9.OnChangesParentComponent();
-    _compView_33.create(_OnChangesParentComponent_33_4, []);
+    _OnChangesParentComponent_33_5 = new import9.OnChangesParentComponent();
+    _compView_33.create(_OnChangesParentComponent_33_5, []);
     _el_34 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_34, 'href', '#top');
     import2.Text _text_35 = new import2.Text('back to top');
@@ -197,8 +195,8 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_37 = new import10.ViewDoCheckParentComponent0(this, 37);
     _el_37 = _compView_37.rootEl;
     parentRenderNode.append(_el_37);
-    _DoCheckParentComponent_37_4 = new import11.DoCheckParentComponent();
-    _compView_37.create(_DoCheckParentComponent_37_4, []);
+    _DoCheckParentComponent_37_5 = new import11.DoCheckParentComponent();
+    _compView_37.create(_DoCheckParentComponent_37_5, []);
     _el_38 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_38, 'href', '#top');
     import2.Text _text_39 = new import2.Text('back to top');
@@ -208,9 +206,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_41 = new import12.ViewAfterViewParentComponent0(this, 41);
     _el_41 = _compView_41.rootEl;
     parentRenderNode.append(_el_41);
-    _LoggerService_41_4 = new import4.LoggerService();
-    _AfterViewParentComponent_41_5 = new import13.AfterViewParentComponent(_LoggerService_41_4);
-    _compView_41.create(_AfterViewParentComponent_41_5, []);
+    _LoggerService_41_5 = new import4.LoggerService();
+    _AfterViewParentComponent_41_6 = new import13.AfterViewParentComponent(_LoggerService_41_5);
+    _compView_41.create(_AfterViewParentComponent_41_6, []);
     _el_42 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_42, 'href', '#top');
     import2.Text _text_43 = new import2.Text('back to top');
@@ -220,9 +218,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_45 = new import14.ViewAfterContentParentComponent0(this, 45);
     _el_45 = _compView_45.rootEl;
     parentRenderNode.append(_el_45);
-    _LoggerService_45_4 = new import4.LoggerService();
-    _AfterContentParentComponent_45_5 = new import15.AfterContentParentComponent(_LoggerService_45_4);
-    _compView_45.create(_AfterContentParentComponent_45_5, []);
+    _LoggerService_45_5 = new import4.LoggerService();
+    _AfterContentParentComponent_45_6 = new import15.AfterContentParentComponent(_LoggerService_45_5);
+    _compView_45.create(_AfterContentParentComponent_45_6, []);
     _el_46 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_46, 'href', '#top');
     import2.Text _text_47 = new import2.Text('back to top');
@@ -232,9 +230,9 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_49 = new import16.ViewCounterParentComponent0(this, 49);
     _el_49 = _compView_49.rootEl;
     parentRenderNode.append(_el_49);
-    _LoggerService_49_4 = new import4.LoggerService();
-    _CounterParentComponent_49_5 = new import17.CounterParentComponent(_LoggerService_49_4);
-    _compView_49.create(_CounterParentComponent_49_5, []);
+    _LoggerService_49_5 = new import4.LoggerService();
+    _CounterParentComponent_49_6 = new import17.CounterParentComponent(_LoggerService_49_5);
+    _compView_49.create(_CounterParentComponent_49_6, []);
     _el_50 = createAndAppend(doc, 'a', parentRenderNode);
     createAttr(_el_50, 'href', '#top');
     import2.Text _text_51 = new import2.Text('back to top');
@@ -246,40 +244,19 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import4.LoggerService) && (25 == nodeIndex))) {
-      return _LoggerService_25_4;
-    }
-    if ((identical(token, import5.PeekABooParentComponent) && (25 == nodeIndex))) {
-      return _PeekABooParentComponent_25_5;
+      return _LoggerService_25_5;
     }
     if ((identical(token, import4.LoggerService) && (29 == nodeIndex))) {
-      return _LoggerService_29_4;
-    }
-    if ((identical(token, import7.SpyParentComponent) && (29 == nodeIndex))) {
-      return _SpyParentComponent_29_5;
-    }
-    if ((identical(token, import9.OnChangesParentComponent) && (33 == nodeIndex))) {
-      return _OnChangesParentComponent_33_4;
-    }
-    if ((identical(token, import11.DoCheckParentComponent) && (37 == nodeIndex))) {
-      return _DoCheckParentComponent_37_4;
+      return _LoggerService_29_5;
     }
     if ((identical(token, import4.LoggerService) && (41 == nodeIndex))) {
-      return _LoggerService_41_4;
-    }
-    if ((identical(token, import13.AfterViewParentComponent) && (41 == nodeIndex))) {
-      return _AfterViewParentComponent_41_5;
+      return _LoggerService_41_5;
     }
     if ((identical(token, import4.LoggerService) && (45 == nodeIndex))) {
-      return _LoggerService_45_4;
-    }
-    if ((identical(token, import15.AfterContentParentComponent) && (45 == nodeIndex))) {
-      return _AfterContentParentComponent_45_5;
+      return _LoggerService_45_5;
     }
     if ((identical(token, import4.LoggerService) && (49 == nodeIndex))) {
-      return _LoggerService_49_4;
-    }
-    if ((identical(token, import17.CounterParentComponent) && (49 == nodeIndex))) {
-      return _CounterParentComponent_49_5;
+      return _LoggerService_49_5;
     }
     return notFoundResult;
   }
@@ -315,24 +292,16 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import1.AppComponent _AppComponent_0_4;
+  import1.AppComponent _AppComponent_0_5;
   _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import19.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AppComponent_0_4 = new import1.AppComponent();
-    _compView_0.create(_AppComponent_0_4, projectableNodes);
+    _AppComponent_0_5 = new import1.AppComponent();
+    _compView_0.create(_AppComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.AppComponent) && (0 == nodeIndex))) {
-      return _AppComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_5);
   }
 
   @override

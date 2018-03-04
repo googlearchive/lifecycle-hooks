@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -67,24 +65,16 @@ const List<dynamic> styles$PeekABooComponentHost = const [];
 
 class _ViewPeekABooComponentHost0 extends AppView<dynamic> {
   ViewPeekABooComponent0 _compView_0;
-  import1.PeekABooComponent _PeekABooComponent_0_4;
+  import1.PeekABooComponent _PeekABooComponent_0_5;
   _ViewPeekABooComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewPeekABooComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _PeekABooComponent_0_4 = new import1.PeekABooComponent(this.injectorGet(import8.LoggerService, viewData.parentIndex));
-    _compView_0.create(_PeekABooComponent_0_4, projectableNodes);
+    _PeekABooComponent_0_5 = new import1.PeekABooComponent(this.injectorGet(import8.LoggerService, viewData.parentIndex));
+    _compView_0.create(_PeekABooComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.PeekABooComponent>(0, this, rootEl, _PeekABooComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.PeekABooComponent) && (0 == nodeIndex))) {
-      return _PeekABooComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.PeekABooComponent>(0, this, rootEl, _PeekABooComponent_0_5);
   }
 
   @override
@@ -93,24 +83,24 @@ class _ViewPeekABooComponentHost0 extends AppView<dynamic> {
     bool firstCheck = (this.cdState == 0);
     changes = null;
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngOnInit();
+      _PeekABooComponent_0_5.ngOnInit();
     }
-    _PeekABooComponent_0_4.ngDoCheck();
+    _PeekABooComponent_0_5.ngDoCheck();
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngAfterContentInit();
+      _PeekABooComponent_0_5.ngAfterContentInit();
     }
-    _PeekABooComponent_0_4.ngAfterContentChecked();
+    _PeekABooComponent_0_5.ngAfterContentChecked();
     _compView_0.detectChanges();
     if (firstCheck) {
-      _PeekABooComponent_0_4.ngAfterViewInit();
+      _PeekABooComponent_0_5.ngAfterViewInit();
     }
-    _PeekABooComponent_0_4.ngAfterViewChecked();
+    _PeekABooComponent_0_5.ngAfterViewChecked();
   }
 
   @override
   void destroyInternal() {
     _compView_0?.destroy();
-    _PeekABooComponent_0_4.ngOnDestroy();
+    _PeekABooComponent_0_5.ngOnDestroy();
   }
 }
 

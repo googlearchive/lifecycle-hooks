@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -18,19 +16,19 @@ import 'package:angular/src/core/linker/app_view.dart';
 import 'after_content_component.dart' as import1;
 import 'dart:html' as import2;
 import 'package:angular_forms/src/directives/default_value_accessor.dart' as import3;
-import 'package:angular_forms/src/directives/ng_model.dart' as import4;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import4;
+import 'package:angular_forms/src/directives/ng_model.dart' as import5;
 import 'package:angular/src/core/render/api.dart';
-import 'package:angular/src/core/linker/view_type.dart' as import6;
+import 'package:angular/src/core/linker/view_type.dart' as import7;
 import 'package:angular/src/core/change_detection/change_detection.dart';
-import 'package:angular/src/core/linker/app_view_utils.dart' as import8;
+import 'package:angular/src/core/linker/app_view_utils.dart' as import9;
 import 'package:angular/angular.dart';
-import 'package:angular/src/core/di/opaque_token.dart' as import10;
-import 'package:angular_forms/src/directives/control_value_accessor.dart' as import11;
-import 'package:angular_forms/src/directives/ng_control.dart' as import12;
+import 'package:angular/src/core/di/opaque_token.dart' as import11;
+import 'package:angular_forms/src/directives/control_value_accessor.dart' as import12;
+import 'package:angular_forms/src/directives/ng_control.dart' as import13;
 import 'package:angular/src/core/linker/view_container.dart';
 import 'package:angular/src/common/directives/ng_if.dart';
 import 'package:angular/src/core/linker/template_ref.dart';
-import 'package:angular/src/core/linker/query_list.dart' as import16;
 import 'logger_service.dart' as import17;
 import 'package:angular/src/common/directives/ng_for.dart' as import18;
 import 'dart:core';
@@ -39,13 +37,13 @@ const List<dynamic> styles$ChildComponent = const [];
 
 class ViewChildComponent0 extends AppView<import1.ChildComponent> {
   import2.InputElement _el_0;
-  import3.DefaultValueAccessor _DefaultValueAccessor_0_4;
-  List<dynamic> _NgValueAccessor_0_5;
-  import4.NgModel _NgModel_0_6;
+  import3.DefaultValueAccessor _DefaultValueAccessor_0_5;
+  List<import4.ControlValueAccessor<dynamic>> _NgValueAccessor_0_6;
+  import5.NgModel _NgModel_0_7;
   static RenderComponentType _renderType;
-  ViewChildComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewChildComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-child');
-    _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ChildComponent);
+    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ChildComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -53,12 +51,12 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
     final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
-    _DefaultValueAccessor_0_4 = new import3.DefaultValueAccessor(_el_0);
-    _NgValueAccessor_0_5 = [_DefaultValueAccessor_0_4];
-    _NgModel_0_6 = new import4.NgModel(null, _NgValueAccessor_0_5);
+    _DefaultValueAccessor_0_5 = new import3.DefaultValueAccessor(_el_0);
+    _NgValueAccessor_0_6 = [_DefaultValueAccessor_0_5];
+    _NgModel_0_7 = new import5.NgModel(null, _NgValueAccessor_0_6);
     _el_0.addEventListener('input', eventHandler1(_handle_input_0_1));
-    _el_0.addEventListener('blur', eventHandler0(_DefaultValueAccessor_0_4.touchHandler));
-    final subscription_0 = _NgModel_0_6.update.listen(eventHandler1(_handle_ngModelChange_0_0));
+    _el_0.addEventListener('blur', eventHandler0(_DefaultValueAccessor_0_5.touchHandler));
+    final subscription_0 = _NgModel_0_7.update.listen(eventHandler1(_handle_ngModelChange_0_0));
     init(const [], [subscription_0]);
     return null;
   }
@@ -66,13 +64,13 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import3.DefaultValueAccessor) && (0 == nodeIndex))) {
-      return _DefaultValueAccessor_0_4;
+      return _DefaultValueAccessor_0_5;
     }
-    if ((identical(token, const import10.OpaqueToken<import11.ControlValueAccessor<dynamic>>('NgValueAccessor')) && (0 == nodeIndex))) {
-      return _NgValueAccessor_0_5;
+    if ((identical(token, const import11.MultiToken<import12.ControlValueAccessor>('NgValueAccessor')) && (0 == nodeIndex))) {
+      return _NgValueAccessor_0_6;
     }
-    if (((identical(token, import4.NgModel) || identical(token, import12.NgControl)) && (0 == nodeIndex))) {
-      return _NgModel_0_6;
+    if (((identical(token, import5.NgModel) || identical(token, import13.NgControl)) && (0 == nodeIndex))) {
+      return _NgModel_0_7;
     }
     return notFoundResult;
   }
@@ -83,10 +81,10 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
     bool changed = false;
     bool firstCheck = (this.cdState == 0);
     changed = false;
-    _NgModel_0_6.model = _ctx.hero;
-    _NgModel_0_6.ngAfterChanges();
+    _NgModel_0_7.model = _ctx.hero;
+    _NgModel_0_7.ngAfterChanges();
     if (firstCheck) {
-      _NgModel_0_6.ngOnInit();
+      _NgModel_0_7.ngOnInit();
     }
   }
 
@@ -95,7 +93,7 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
   }
 
   void _handle_input_0_1($event) {
-    _DefaultValueAccessor_0_4.onChange($event.target.value);
+    _DefaultValueAccessor_0_5.onChange($event.target.value);
   }
 }
 
@@ -107,24 +105,16 @@ const List<dynamic> styles$ChildComponentHost = const [];
 
 class _ViewChildComponentHost0 extends AppView<dynamic> {
   ViewChildComponent0 _compView_0;
-  import1.ChildComponent _ChildComponent_0_4;
-  _ViewChildComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.ChildComponent _ChildComponent_0_5;
+  _ViewChildComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewChildComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ChildComponent_0_4 = new import1.ChildComponent();
-    _compView_0.create(_ChildComponent_0_4, projectableNodes);
+    _ChildComponent_0_5 = new import1.ChildComponent();
+    _compView_0.create(_ChildComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.ChildComponent>(0, this, rootEl, _ChildComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.ChildComponent) && (0 == nodeIndex))) {
-      return _ChildComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.ChildComponent>(0, this, rootEl, _ChildComponent_0_5);
   }
 
   @override
@@ -149,11 +139,11 @@ class ViewAfterContentComponent0 extends AppView<import1.AfterContentComponent> 
   import2.DivElement _el_0;
   import2.DivElement _el_2;
   ViewContainer _appEl_4;
-  NgIf _NgIf_4_7;
+  NgIf _NgIf_4_9;
   static RenderComponentType _renderType;
-  ViewAfterContentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAfterContentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('after-content');
-    _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AfterContentComponent);
+    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AfterContentComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -170,8 +160,8 @@ class ViewAfterContentComponent0 extends AppView<import1.AfterContentComponent> 
     var _anchor_4 = ngAnchor.clone(false);
     parentRenderNode.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, null, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_AfterContentComponent1);
-    _NgIf_4_7 = new NgIf(_appEl_4, _TemplateRef_4_6);
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_AfterContentComponent1);
+    _NgIf_4_9 = new NgIf(_appEl_4, _TemplateRef_4_8);
     init(const [], null);
     return null;
   }
@@ -179,7 +169,7 @@ class ViewAfterContentComponent0 extends AppView<import1.AfterContentComponent> 
   @override
   void detectChangesInternal() {
     final import1.AfterContentComponent _ctx = ctx;
-    _NgIf_4_7.ngIf = _ctx.comment.isNotEmpty;
+    _NgIf_4_9.ngIf = _ctx.comment.isNotEmpty;
     _appEl_4.detectChangesInNestedViews();
   }
 
@@ -197,7 +187,7 @@ class _ViewAfterContentComponent1 extends AppView<import1.AfterContentComponent>
   import2.Element _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewAfterContentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAfterContentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentComponent0._renderType;
   }
   @override
@@ -230,36 +220,26 @@ const List<dynamic> styles$AfterContentComponentHost = const [];
 
 class _ViewAfterContentComponentHost0 extends AppView<dynamic> {
   ViewAfterContentComponent0 _compView_0;
-  import1.AfterContentComponent _AfterContentComponent_0_4;
-  final import16.QueryList _query_ChildComponent_0_0 = new import16.QueryList();
-  _ViewAfterContentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import1.AfterContentComponent _AfterContentComponent_0_5;
+  bool _query_ChildComponent_0_0_isDirty = true;
+  _ViewAfterContentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAfterContentComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AfterContentComponent_0_4 = new import1.AfterContentComponent(this.injectorGet(import17.LoggerService, viewData.parentIndex));
-    _query_ChildComponent_0_0.reset([]);
-    _AfterContentComponent_0_4.contentChild = _query_ChildComponent_0_0.first;
-    _compView_0.create(_AfterContentComponent_0_4, projectableNodes);
+    _AfterContentComponent_0_5 = new import1.AfterContentComponent(this.injectorGet(import17.LoggerService, viewData.parentIndex));
+    _compView_0.create(_AfterContentComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AfterContentComponent>(0, this, rootEl, _AfterContentComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.AfterContentComponent) && (0 == nodeIndex))) {
-      return _AfterContentComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.AfterContentComponent>(0, this, rootEl, _AfterContentComponent_0_5);
   }
 
   @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _AfterContentComponent_0_4.ngAfterContentInit();
+      _AfterContentComponent_0_5.ngAfterContentInit();
     }
-    _AfterContentComponent_0_4.ngAfterContentChecked();
+    _AfterContentComponent_0_5.ngAfterContentChecked();
     _compView_0.detectChanges();
   }
 
@@ -280,17 +260,17 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
   import2.DivElement _el_0;
   import2.Element _el_1;
   ViewContainer _appEl_3;
-  NgIf _NgIf_3_7;
+  NgIf _NgIf_3_9;
   import2.Element _el_4;
   import2.Element _el_6;
   import2.ButtonElement _el_7;
   ViewContainer _appEl_9;
-  import18.NgFor _NgFor_9_7;
+  import18.NgFor _NgFor_9_9;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewAfterContentParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAfterContentParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('after-content-parent');
-    _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AfterContentParentComponent);
+    _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AfterContentParentComponent);
     setupComponentType(_renderType);
   }
   @override
@@ -307,8 +287,8 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
     var _anchor_3 = ngAnchor.clone(false);
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
-    TemplateRef _TemplateRef_3_6 = new TemplateRef(_appEl_3, viewFactory_AfterContentParentComponent1);
-    _NgIf_3_7 = new NgIf(_appEl_3, _TemplateRef_3_6);
+    TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_AfterContentParentComponent1);
+    _NgIf_3_9 = new NgIf(_appEl_3, _TemplateRef_3_8);
     _el_4 = createAndAppend(doc, 'h4', _el_0);
     addShimE(_el_4);
     import2.Text _text_5 = new import2.Text('-- AfterContent Logs --');
@@ -322,8 +302,8 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
     var _anchor_9 = ngAnchor.clone(false);
     _el_0.append(_anchor_9);
     _appEl_9 = new ViewContainer(9, 0, this, _anchor_9);
-    TemplateRef _TemplateRef_9_6 = new TemplateRef(_appEl_9, viewFactory_AfterContentParentComponent2);
-    _NgFor_9_7 = new import18.NgFor(_appEl_9, _TemplateRef_9_6);
+    TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_AfterContentParentComponent2);
+    _NgFor_9_9 = new import18.NgFor(_appEl_9, _TemplateRef_9_8);
     _el_7.addEventListener('click', eventHandler0(ctx.reset));
     init(const [], null);
     return null;
@@ -332,13 +312,13 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
   @override
   void detectChangesInternal() {
     final import1.AfterContentParentComponent _ctx = ctx;
-    _NgIf_3_7.ngIf = _ctx.show;
+    _NgIf_3_9.ngIf = _ctx.show;
     final currVal_1 = _ctx.logs;
     if (!identical(_expr_1, currVal_1)) {
-      _NgFor_9_7.ngForOf = currVal_1;
+      _NgFor_9_9.ngForOf = currVal_1;
       _expr_1 = currVal_1;
     }
-    _NgFor_9_7.ngDoCheck();
+    _NgFor_9_9.ngDoCheck();
     _appEl_3.detectChangesInNestedViews();
     _appEl_9.detectChangesInNestedViews();
   }
@@ -358,12 +338,12 @@ class _ViewAfterContentParentComponent1 extends AppView<import1.AfterContentPare
   import2.DivElement _el_0;
   import2.Element _el_1;
   ViewAfterContentComponent0 _compView_1;
-  import1.AfterContentComponent _AfterContentComponent_1_4;
-  final import16.QueryList _query_ChildComponent_1_0 = new import16.QueryList();
+  import1.AfterContentComponent _AfterContentComponent_1_5;
+  bool _query_ChildComponent_1_0_isDirty = true;
   import2.Element _el_2;
   ViewChildComponent0 _compView_2;
-  import1.ChildComponent _ChildComponent_2_4;
-  _ViewAfterContentParentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  import1.ChildComponent _ChildComponent_2_5;
+  _ViewAfterContentParentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentParentComponent0._renderType;
   }
   @override
@@ -375,15 +355,14 @@ class _ViewAfterContentParentComponent1 extends AppView<import1.AfterContentPare
     _el_1 = _compView_1.rootEl;
     _el_0.append(_el_1);
     addShimC(_el_1);
-    _AfterContentComponent_1_4 = new import1.AfterContentComponent(parentView.parentView.injectorGet(import17.LoggerService, parentView.viewData.parentIndex));
+    _AfterContentComponent_1_5 = new import1.AfterContentComponent(parentView.parentView.injectorGet(import17.LoggerService, parentView.viewData.parentIndex));
     _compView_2 = new ViewChildComponent0(this, 2);
     _el_2 = _compView_2.rootEl;
     addShimC(_el_2);
-    _ChildComponent_2_4 = new import1.ChildComponent();
-    _compView_2.create(_ChildComponent_2_4, []);
-    _query_ChildComponent_1_0.reset([_ChildComponent_2_4]);
-    _AfterContentComponent_1_4.contentChild = _query_ChildComponent_1_0.first;
-    _compView_1.create(_AfterContentComponent_1_4, [
+    _ChildComponent_2_5 = new import1.ChildComponent();
+    _compView_2.create(_ChildComponent_2_5, []);
+    _AfterContentComponent_1_5.contentChild = _ChildComponent_2_5;
+    _compView_1.create(_AfterContentComponent_1_5, [
       [_el_2]
     ]);
     init0(_el_0);
@@ -391,23 +370,12 @@ class _ViewAfterContentParentComponent1 extends AppView<import1.AfterContentPare
   }
 
   @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.ChildComponent) && (2 == nodeIndex))) {
-      return _ChildComponent_2_4;
-    }
-    if ((identical(token, import1.AfterContentComponent) && ((1 <= nodeIndex) && (nodeIndex <= 2)))) {
-      return _AfterContentComponent_1_4;
-    }
-    return notFoundResult;
-  }
-
-  @override
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _AfterContentComponent_1_4.ngAfterContentInit();
+      _AfterContentComponent_1_5.ngAfterContentInit();
     }
-    _AfterContentComponent_1_4.ngAfterContentChecked();
+    _AfterContentComponent_1_5.ngAfterContentChecked();
     _compView_1.detectChanges();
     _compView_2.detectChanges();
   }
@@ -427,7 +395,7 @@ class _ViewAfterContentParentComponent2 extends AppView<import1.AfterContentPare
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewAfterContentParentComponent2(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAfterContentParentComponent2(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentParentComponent0._renderType;
   }
   @override
@@ -444,7 +412,7 @@ class _ViewAfterContentParentComponent2 extends AppView<import1.AfterContentPare
   @override
   void detectChangesInternal() {
     final String local_msg = locals['\$implicit'];
-    final currVal_0 = import8.interpolate0(local_msg);
+    final currVal_0 = import9.interpolate0(local_msg);
     if (!identical(_expr_0, currVal_0)) {
       _text_1.text = currVal_0;
       _expr_0 = currVal_0;
@@ -460,27 +428,24 @@ const List<dynamic> styles$AfterContentParentComponentHost = const [];
 
 class _ViewAfterContentParentComponentHost0 extends AppView<dynamic> {
   ViewAfterContentParentComponent0 _compView_0;
-  import17.LoggerService _LoggerService_0_4;
-  import1.AfterContentParentComponent _AfterContentParentComponent_0_5;
-  _ViewAfterContentParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  import17.LoggerService _LoggerService_0_5;
+  import1.AfterContentParentComponent _AfterContentParentComponent_0_6;
+  _ViewAfterContentParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAfterContentParentComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _LoggerService_0_4 = new import17.LoggerService();
-    _AfterContentParentComponent_0_5 = new import1.AfterContentParentComponent(_LoggerService_0_4);
-    _compView_0.create(_AfterContentParentComponent_0_5, projectableNodes);
+    _LoggerService_0_5 = new import17.LoggerService();
+    _AfterContentParentComponent_0_6 = new import1.AfterContentParentComponent(_LoggerService_0_5);
+    _compView_0.create(_AfterContentParentComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AfterContentParentComponent>(0, this, rootEl, _AfterContentParentComponent_0_5);
+    return new ComponentRef<import1.AfterContentParentComponent>(0, this, rootEl, _AfterContentParentComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import17.LoggerService) && (0 == nodeIndex))) {
-      return _LoggerService_0_4;
-    }
-    if ((identical(token, import1.AfterContentParentComponent) && (0 == nodeIndex))) {
-      return _AfterContentParentComponent_0_5;
+      return _LoggerService_0_5;
     }
     return notFoundResult;
   }
