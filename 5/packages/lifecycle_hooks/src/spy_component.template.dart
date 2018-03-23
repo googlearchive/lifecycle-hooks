@@ -55,14 +55,15 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewSpyParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSpyParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('spy-parent');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SpyParentComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.SpyParentComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'parent';
@@ -166,7 +167,7 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
   }
 }
 
-AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewSpyParentComponent0(parentView, parentIndex);
 }
 
@@ -175,7 +176,7 @@ class _ViewSpyParentComponent1 extends AppView<import1.SpyParentComponent> {
   import17.SpyDirective _SpyDirective_0_5;
   import2.Text _text_1;
   var _expr_0;
-  _ViewSpyParentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSpyParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSpyParentComponent0._renderType;
   }
   @override
@@ -212,7 +213,7 @@ class _ViewSpyParentComponent1 extends AppView<import1.SpyParentComponent> {
   }
 }
 
-AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSpyParentComponent1(parentView, parentIndex);
 }
 
@@ -220,7 +221,7 @@ class _ViewSpyParentComponent2 extends AppView<import1.SpyParentComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewSpyParentComponent2(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSpyParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSpyParentComponent0._renderType;
   }
   @override
@@ -245,7 +246,7 @@ class _ViewSpyParentComponent2 extends AppView<import1.SpyParentComponent> {
   }
 }
 
-AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.SpyParentComponent> viewFactory_SpyParentComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSpyParentComponent2(parentView, parentIndex);
 }
 
@@ -255,7 +256,7 @@ class _ViewSpyParentComponentHost0 extends AppView<dynamic> {
   ViewSpyParentComponent0 _compView_0;
   import18.LoggerService _LoggerService_0_5;
   import1.SpyParentComponent _SpyParentComponent_0_6;
-  _ViewSpyParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSpyParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSpyParentComponent0(this, 0);
@@ -286,7 +287,7 @@ class _ViewSpyParentComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_SpyParentComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_SpyParentComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewSpyParentComponentHost0(parentView, parentIndex);
 }
 

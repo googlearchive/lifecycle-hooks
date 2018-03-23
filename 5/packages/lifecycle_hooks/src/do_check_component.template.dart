@@ -43,14 +43,15 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewDoCheckComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDoCheckComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('do-check');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DoCheckComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.DoCheckComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'hero';
@@ -104,7 +105,7 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
   }
 }
 
-AppView<import1.DoCheckComponent> viewFactory_DoCheckComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.DoCheckComponent> viewFactory_DoCheckComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewDoCheckComponent0(parentView, parentIndex);
 }
 
@@ -112,7 +113,7 @@ class _ViewDoCheckComponent1 extends AppView<import1.DoCheckComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewDoCheckComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDoCheckComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDoCheckComponent0._renderType;
   }
   @override
@@ -137,7 +138,7 @@ class _ViewDoCheckComponent1 extends AppView<import1.DoCheckComponent> {
   }
 }
 
-AppView<import1.DoCheckComponent> viewFactory_DoCheckComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.DoCheckComponent> viewFactory_DoCheckComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDoCheckComponent1(parentView, parentIndex);
 }
 
@@ -146,7 +147,7 @@ const List<dynamic> styles$DoCheckComponentHost = const [];
 class _ViewDoCheckComponentHost0 extends AppView<dynamic> {
   ViewDoCheckComponent0 _compView_0;
   import1.DoCheckComponent _DoCheckComponent_0_5;
-  _ViewDoCheckComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDoCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckComponent0(this, 0);
@@ -169,7 +170,7 @@ class _ViewDoCheckComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_DoCheckComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_DoCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDoCheckComponentHost0(parentView, parentIndex);
 }
 
@@ -205,14 +206,15 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   var _expr_3;
   String _expr_4;
   static RenderComponentType _renderType;
-  ViewDoCheckParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDoCheckParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('do-check-parent');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DoCheckParentComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.DoCheckParentComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'parent';
@@ -354,7 +356,7 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   }
 }
 
-AppView<import1.DoCheckParentComponent> viewFactory_DoCheckParentComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.DoCheckParentComponent> viewFactory_DoCheckParentComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewDoCheckParentComponent0(parentView, parentIndex);
 }
 
@@ -363,7 +365,7 @@ const List<dynamic> styles$DoCheckParentComponentHost = const [];
 class _ViewDoCheckParentComponentHost0 extends AppView<dynamic> {
   ViewDoCheckParentComponent0 _compView_0;
   import1.DoCheckParentComponent _DoCheckParentComponent_0_5;
-  _ViewDoCheckParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDoCheckParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckParentComponent0(this, 0);
@@ -385,7 +387,7 @@ class _ViewDoCheckParentComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_DoCheckParentComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_DoCheckParentComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewDoCheckParentComponentHost0(parentView, parentIndex);
 }
 

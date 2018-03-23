@@ -44,14 +44,15 @@ class ViewOnChangesComponent0 extends AppView<import1.OnChangesComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewOnChangesComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewOnChangesComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('on-changes');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$OnChangesComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.OnChangesComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'hero';
@@ -105,7 +106,7 @@ class ViewOnChangesComponent0 extends AppView<import1.OnChangesComponent> {
   }
 }
 
-AppView<import1.OnChangesComponent> viewFactory_OnChangesComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.OnChangesComponent> viewFactory_OnChangesComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewOnChangesComponent0(parentView, parentIndex);
 }
 
@@ -113,7 +114,7 @@ class _ViewOnChangesComponent1 extends AppView<import1.OnChangesComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewOnChangesComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewOnChangesComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewOnChangesComponent0._renderType;
   }
   @override
@@ -138,7 +139,7 @@ class _ViewOnChangesComponent1 extends AppView<import1.OnChangesComponent> {
   }
 }
 
-AppView<import1.OnChangesComponent> viewFactory_OnChangesComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.OnChangesComponent> viewFactory_OnChangesComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewOnChangesComponent1(parentView, parentIndex);
 }
 
@@ -147,7 +148,7 @@ const List<dynamic> styles$OnChangesComponentHost = const [];
 class _ViewOnChangesComponentHost0 extends AppView<dynamic> {
   ViewOnChangesComponent0 _compView_0;
   import1.OnChangesComponent _OnChangesComponent_0_5;
-  _ViewOnChangesComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewOnChangesComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewOnChangesComponent0(this, 0);
@@ -171,7 +172,7 @@ class _ViewOnChangesComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_OnChangesComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_OnChangesComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewOnChangesComponentHost0(parentView, parentIndex);
 }
 
@@ -207,14 +208,15 @@ class ViewOnChangesParentComponent0 extends AppView<import1.OnChangesParentCompo
   var _expr_3;
   String _expr_4;
   static RenderComponentType _renderType;
-  ViewOnChangesParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewOnChangesParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('on-changes-parent');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$OnChangesParentComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.OnChangesParentComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'parent';
@@ -364,7 +366,7 @@ class ViewOnChangesParentComponent0 extends AppView<import1.OnChangesParentCompo
   }
 }
 
-AppView<import1.OnChangesParentComponent> viewFactory_OnChangesParentComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.OnChangesParentComponent> viewFactory_OnChangesParentComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewOnChangesParentComponent0(parentView, parentIndex);
 }
 
@@ -373,7 +375,7 @@ const List<dynamic> styles$OnChangesParentComponentHost = const [];
 class _ViewOnChangesParentComponentHost0 extends AppView<dynamic> {
   ViewOnChangesParentComponent0 _compView_0;
   import1.OnChangesParentComponent _OnChangesParentComponent_0_5;
-  _ViewOnChangesParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewOnChangesParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewOnChangesParentComponent0(this, 0);
@@ -395,7 +397,7 @@ class _ViewOnChangesParentComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_OnChangesParentComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_OnChangesParentComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewOnChangesParentComponentHost0(parentView, parentIndex);
 }
 

@@ -48,14 +48,15 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   var _expr_1;
   var _expr_3;
   static RenderComponentType _renderType;
-  ViewPeekABooParentComponent0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewPeekABooParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('peek-a-boo-parent');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$PeekABooParentComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.PeekABooParentComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createDivAndAppend(doc, parentRenderNode);
     _el_0.className = 'parent';
@@ -125,7 +126,7 @@ class ViewPeekABooParentComponent0 extends AppView<import1.PeekABooParentCompone
   }
 }
 
-AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewPeekABooParentComponent0(parentView, parentIndex);
 }
 
@@ -134,7 +135,7 @@ class _ViewPeekABooParentComponent1 extends AppView<import1.PeekABooParentCompon
   import12.ViewPeekABooComponent0 _compView_0;
   import13.PeekABooComponent _PeekABooComponent_0_5;
   String _expr_0;
-  _ViewPeekABooParentComponent1(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewPeekABooParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewPeekABooParentComponent0._renderType;
   }
   @override
@@ -186,7 +187,7 @@ class _ViewPeekABooParentComponent1 extends AppView<import1.PeekABooParentCompon
   }
 }
 
-AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewPeekABooParentComponent1(parentView, parentIndex);
 }
 
@@ -194,7 +195,7 @@ class _ViewPeekABooParentComponent2 extends AppView<import1.PeekABooParentCompon
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewPeekABooParentComponent2(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewPeekABooParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewPeekABooParentComponent0._renderType;
   }
   @override
@@ -219,7 +220,7 @@ class _ViewPeekABooParentComponent2 extends AppView<import1.PeekABooParentCompon
   }
 }
 
-AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent2(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.PeekABooParentComponent> viewFactory_PeekABooParentComponent2(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewPeekABooParentComponent2(parentView, parentIndex);
 }
 
@@ -229,7 +230,7 @@ class _ViewPeekABooParentComponentHost0 extends AppView<dynamic> {
   ViewPeekABooParentComponent0 _compView_0;
   import14.LoggerService _LoggerService_0_5;
   import1.PeekABooParentComponent _PeekABooParentComponent_0_6;
-  _ViewPeekABooParentComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewPeekABooParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewPeekABooParentComponent0(this, 0);
@@ -260,7 +261,7 @@ class _ViewPeekABooParentComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_PeekABooParentComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_PeekABooParentComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewPeekABooParentComponentHost0(parentView, parentIndex);
 }
 
