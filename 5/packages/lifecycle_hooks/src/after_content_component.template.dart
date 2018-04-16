@@ -41,7 +41,7 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
   List<import4.ControlValueAccessor<dynamic>> _NgValueAccessor_0_6;
   import5.NgModel _NgModel_0_7;
   static RenderComponentType _renderType;
-  ViewChildComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewChildComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-child');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$ChildComponent);
     setupComponentType(_renderType);
@@ -55,8 +55,8 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
     _DefaultValueAccessor_0_5 = new import3.DefaultValueAccessor(_el_0);
     _NgValueAccessor_0_6 = [_DefaultValueAccessor_0_5];
     _NgModel_0_7 = new import5.NgModel(null, _NgValueAccessor_0_6);
-    _el_0.addEventListener('input', eventHandler1(_handle_input_0_1));
     _el_0.addEventListener('blur', eventHandler0(_DefaultValueAccessor_0_5.touchHandler));
+    _el_0.addEventListener('input', eventHandler1(_handle_input_0_2));
     final subscription_0 = _NgModel_0_7.update.listen(eventHandler1(_handle_ngModelChange_0_0));
     init(const [], [subscription_0]);
     return null;
@@ -93,8 +93,8 @@ class ViewChildComponent0 extends AppView<import1.ChildComponent> {
     ctx.hero = $event;
   }
 
-  void _handle_input_0_1($event) {
-    _DefaultValueAccessor_0_5.onChange($event.target.value);
+  void _handle_input_0_2($event) {
+    _DefaultValueAccessor_0_5.handleChange($event.target.value);
   }
 }
 
@@ -107,7 +107,7 @@ const List<dynamic> styles$ChildComponentHost = const [];
 class _ViewChildComponentHost0 extends AppView<dynamic> {
   ViewChildComponent0 _compView_0;
   import1.ChildComponent _ChildComponent_0_5;
-  _ViewChildComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewChildComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewChildComponent0(this, 0);
@@ -142,7 +142,7 @@ class ViewAfterContentComponent0 extends AppView<import1.AfterContentComponent> 
   ViewContainer _appEl_4;
   NgIf _NgIf_4_9;
   static RenderComponentType _renderType;
-  ViewAfterContentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAfterContentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('after-content');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$AfterContentComponent);
     setupComponentType(_renderType);
@@ -159,7 +159,7 @@ class ViewAfterContentComponent0 extends AppView<import1.AfterContentComponent> 
     _el_2 = createDivAndAppend(doc, parentRenderNode);
     import2.Text _text_3 = new import2.Text('-- projected content ends --');
     _el_2.append(_text_3);
-    var _anchor_4 = ngAnchor.clone(false);
+    final _anchor_4 = createViewContainerAnchor();
     parentRenderNode.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, null, this, _anchor_4);
     TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_AfterContentComponent1);
@@ -189,7 +189,7 @@ class _ViewAfterContentComponent1 extends AppView<import1.AfterContentComponent>
   import2.Element _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewAfterContentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAfterContentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentComponent0._renderType;
   }
   @override
@@ -224,7 +224,7 @@ class _ViewAfterContentComponentHost0 extends AppView<dynamic> {
   ViewAfterContentComponent0 _compView_0;
   import1.AfterContentComponent _AfterContentComponent_0_5;
   bool _query_ChildComponent_0_0_isDirty = true;
-  _ViewAfterContentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAfterContentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAfterContentComponent0(this, 0);
@@ -270,7 +270,7 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
   import18.NgFor _NgFor_9_9;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewAfterContentParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewAfterContentParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('after-content-parent');
     _renderType ??= import9.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$AfterContentParentComponent);
     setupComponentType(_renderType);
@@ -287,7 +287,7 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
     addShimE(_el_1);
     import2.Text _text_2 = new import2.Text('AfterContent');
     _el_1.append(_text_2);
-    var _anchor_3 = ngAnchor.clone(false);
+    final _anchor_3 = createViewContainerAnchor();
     _el_0.append(_anchor_3);
     _appEl_3 = new ViewContainer(3, 0, this, _anchor_3);
     TemplateRef _TemplateRef_3_8 = new TemplateRef(_appEl_3, viewFactory_AfterContentParentComponent1);
@@ -302,7 +302,7 @@ class ViewAfterContentParentComponent0 extends AppView<import1.AfterContentParen
     addShimC(_el_7);
     import2.Text _text_8 = new import2.Text('Reset');
     _el_7.append(_text_8);
-    var _anchor_9 = ngAnchor.clone(false);
+    final _anchor_9 = createViewContainerAnchor();
     _el_0.append(_anchor_9);
     _appEl_9 = new ViewContainer(9, 0, this, _anchor_9);
     TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_AfterContentParentComponent2);
@@ -346,7 +346,7 @@ class _ViewAfterContentParentComponent1 extends AppView<import1.AfterContentPare
   import2.Element _el_2;
   ViewChildComponent0 _compView_2;
   import1.ChildComponent _ChildComponent_2_5;
-  _ViewAfterContentParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAfterContentParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentParentComponent0._renderType;
   }
   @override
@@ -398,7 +398,7 @@ class _ViewAfterContentParentComponent2 extends AppView<import1.AfterContentPare
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewAfterContentParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewAfterContentParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewAfterContentParentComponent0._renderType;
   }
   @override
@@ -433,7 +433,7 @@ class _ViewAfterContentParentComponentHost0 extends AppView<dynamic> {
   ViewAfterContentParentComponent0 _compView_0;
   import17.LoggerService _LoggerService_0_5;
   import1.AfterContentParentComponent _AfterContentParentComponent_0_6;
-  _ViewAfterContentParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewAfterContentParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import7.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAfterContentParentComponent0(this, 0);

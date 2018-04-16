@@ -43,7 +43,7 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewDoCheckComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDoCheckComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('do-check');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DoCheckComponent);
     setupComponentType(_renderType);
@@ -68,7 +68,7 @@ class ViewDoCheckComponent0 extends AppView<import1.DoCheckComponent> {
     addShimE(_el_5);
     import2.Text _text_6 = new import2.Text('-- Change Log --');
     _el_5.append(_text_6);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_DoCheckComponent1);
@@ -113,7 +113,7 @@ class _ViewDoCheckComponent1 extends AppView<import1.DoCheckComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewDoCheckComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewDoCheckComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewDoCheckComponent0._renderType;
   }
   @override
@@ -147,7 +147,7 @@ const List<dynamic> styles$DoCheckComponentHost = const [];
 class _ViewDoCheckComponentHost0 extends AppView<dynamic> {
   ViewDoCheckComponent0 _compView_0;
   import1.DoCheckComponent _DoCheckComponent_0_5;
-  _ViewDoCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDoCheckComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckComponent0(this, 0);
@@ -206,7 +206,7 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
   var _expr_3;
   String _expr_4;
   static RenderComponentType _renderType;
-  ViewDoCheckParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewDoCheckParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('do-check-parent');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$DoCheckParentComponent);
     setupComponentType(_renderType);
@@ -263,11 +263,11 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     addShimC(_el_17);
     _DoCheckComponent_17_5 = new import1.DoCheckComponent();
     _compView_17.create(_DoCheckComponent_17_5, []);
-    _el_8.addEventListener('input', eventHandler1(_handle_input_8_1));
     _el_8.addEventListener('blur', eventHandler0(_DefaultValueAccessor_8_5.touchHandler));
+    _el_8.addEventListener('input', eventHandler1(_handle_input_8_2));
     final subscription_0 = _NgModel_8_7.update.listen(eventHandler1(_handle_ngModelChange_8_0));
-    _el_13.addEventListener('input', eventHandler1(_handle_input_13_1));
     _el_13.addEventListener('blur', eventHandler0(_DefaultValueAccessor_13_5.touchHandler));
+    _el_13.addEventListener('input', eventHandler1(_handle_input_13_2));
     final subscription_1 = _NgModel_13_7.update.listen(eventHandler1(_handle_ngModelChange_13_0));
     _el_15.addEventListener('click', eventHandler0(ctx.reset));
     ctx.childView = _DoCheckComponent_17_5;
@@ -343,16 +343,16 @@ class ViewDoCheckParentComponent0 extends AppView<import1.DoCheckParentComponent
     ctx.power = $event;
   }
 
-  void _handle_input_8_1($event) {
-    _DefaultValueAccessor_8_5.onChange($event.target.value);
+  void _handle_input_8_2($event) {
+    _DefaultValueAccessor_8_5.handleChange($event.target.value);
   }
 
   void _handle_ngModelChange_13_0($event) {
     ctx.hero.name = $event;
   }
 
-  void _handle_input_13_1($event) {
-    _DefaultValueAccessor_13_5.onChange($event.target.value);
+  void _handle_input_13_2($event) {
+    _DefaultValueAccessor_13_5.handleChange($event.target.value);
   }
 }
 
@@ -365,7 +365,7 @@ const List<dynamic> styles$DoCheckParentComponentHost = const [];
 class _ViewDoCheckParentComponentHost0 extends AppView<dynamic> {
   ViewDoCheckParentComponent0 _compView_0;
   import1.DoCheckParentComponent _DoCheckParentComponent_0_5;
-  _ViewDoCheckParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewDoCheckParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewDoCheckParentComponent0(this, 0);

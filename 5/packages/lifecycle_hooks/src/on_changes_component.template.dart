@@ -44,7 +44,7 @@ class ViewOnChangesComponent0 extends AppView<import1.OnChangesComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewOnChangesComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewOnChangesComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('on-changes');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$OnChangesComponent);
     setupComponentType(_renderType);
@@ -69,7 +69,7 @@ class ViewOnChangesComponent0 extends AppView<import1.OnChangesComponent> {
     addShimE(_el_5);
     import2.Text _text_6 = new import2.Text('-- Change Log --');
     _el_5.append(_text_6);
-    var _anchor_7 = ngAnchor.clone(false);
+    final _anchor_7 = createViewContainerAnchor();
     _el_0.append(_anchor_7);
     _appEl_7 = new ViewContainer(7, 0, this, _anchor_7);
     TemplateRef _TemplateRef_7_8 = new TemplateRef(_appEl_7, viewFactory_OnChangesComponent1);
@@ -114,7 +114,7 @@ class _ViewOnChangesComponent1 extends AppView<import1.OnChangesComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewOnChangesComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewOnChangesComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewOnChangesComponent0._renderType;
   }
   @override
@@ -148,7 +148,7 @@ const List<dynamic> styles$OnChangesComponentHost = const [];
 class _ViewOnChangesComponentHost0 extends AppView<dynamic> {
   ViewOnChangesComponent0 _compView_0;
   import1.OnChangesComponent _OnChangesComponent_0_5;
-  _ViewOnChangesComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewOnChangesComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewOnChangesComponent0(this, 0);
@@ -208,7 +208,7 @@ class ViewOnChangesParentComponent0 extends AppView<import1.OnChangesParentCompo
   var _expr_3;
   String _expr_4;
   static RenderComponentType _renderType;
-  ViewOnChangesParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewOnChangesParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('on-changes-parent');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$OnChangesParentComponent);
     setupComponentType(_renderType);
@@ -265,11 +265,11 @@ class ViewOnChangesParentComponent0 extends AppView<import1.OnChangesParentCompo
     addShimC(_el_17);
     _OnChangesComponent_17_5 = new import1.OnChangesComponent();
     _compView_17.create(_OnChangesComponent_17_5, []);
-    _el_8.addEventListener('input', eventHandler1(_handle_input_8_1));
     _el_8.addEventListener('blur', eventHandler0(_DefaultValueAccessor_8_5.touchHandler));
+    _el_8.addEventListener('input', eventHandler1(_handle_input_8_2));
     final subscription_0 = _NgModel_8_7.update.listen(eventHandler1(_handle_ngModelChange_8_0));
-    _el_13.addEventListener('input', eventHandler1(_handle_input_13_1));
     _el_13.addEventListener('blur', eventHandler0(_DefaultValueAccessor_13_5.touchHandler));
+    _el_13.addEventListener('input', eventHandler1(_handle_input_13_2));
     final subscription_1 = _NgModel_13_7.update.listen(eventHandler1(_handle_ngModelChange_13_0));
     _el_15.addEventListener('click', eventHandler0(ctx.reset));
     ctx.childView = _OnChangesComponent_17_5;
@@ -353,16 +353,16 @@ class ViewOnChangesParentComponent0 extends AppView<import1.OnChangesParentCompo
     ctx.power = $event;
   }
 
-  void _handle_input_8_1($event) {
-    _DefaultValueAccessor_8_5.onChange($event.target.value);
+  void _handle_input_8_2($event) {
+    _DefaultValueAccessor_8_5.handleChange($event.target.value);
   }
 
   void _handle_ngModelChange_13_0($event) {
     ctx.hero.name = $event;
   }
 
-  void _handle_input_13_1($event) {
-    _DefaultValueAccessor_13_5.onChange($event.target.value);
+  void _handle_input_13_2($event) {
+    _DefaultValueAccessor_13_5.handleChange($event.target.value);
   }
 }
 
@@ -375,7 +375,7 @@ const List<dynamic> styles$OnChangesParentComponentHost = const [];
 class _ViewOnChangesParentComponentHost0 extends AppView<dynamic> {
   ViewOnChangesParentComponent0 _compView_0;
   import1.OnChangesParentComponent _OnChangesParentComponent_0_5;
-  _ViewOnChangesParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewOnChangesParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewOnChangesParentComponent0(this, 0);

@@ -55,7 +55,7 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
-  ViewSpyParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewSpyParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('spy-parent');
     _renderType ??= import11.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$SpyParentComponent);
     setupComponentType(_renderType);
@@ -87,7 +87,7 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
     _el_6.append(_text_7);
     _el_8 = createAndAppend(doc, 'p', _el_0);
     addShimE(_el_8);
-    var _anchor_9 = ngAnchor.clone(false);
+    final _anchor_9 = createViewContainerAnchor();
     _el_0.append(_anchor_9);
     _appEl_9 = new ViewContainer(9, 0, this, _anchor_9);
     TemplateRef _TemplateRef_9_8 = new TemplateRef(_appEl_9, viewFactory_SpyParentComponent1);
@@ -96,14 +96,14 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
     addShimE(_el_10);
     import2.Text _text_11 = new import2.Text('-- Spy Lifecycle Hook Log --');
     _el_10.append(_text_11);
-    var _anchor_12 = ngAnchor.clone(false);
+    final _anchor_12 = createViewContainerAnchor();
     _el_0.append(_anchor_12);
     _appEl_12 = new ViewContainer(12, 0, this, _anchor_12);
     TemplateRef _TemplateRef_12_8 = new TemplateRef(_appEl_12, viewFactory_SpyParentComponent2);
     _NgFor_12_9 = new import7.NgFor(_appEl_12, _TemplateRef_12_8);
     import11.appViewUtils.eventManager.addEventListener(_el_3, 'keyup.enter', eventHandler0(ctx.addHero));
-    _el_3.addEventListener('input', eventHandler1(_handle_input_3_2));
     _el_3.addEventListener('blur', eventHandler0(_DefaultValueAccessor_3_5.touchHandler));
+    _el_3.addEventListener('input', eventHandler1(_handle_input_3_3));
     final subscription_0 = _NgModel_3_7.update.listen(eventHandler1(_handle_ngModelChange_3_1));
     _el_4.addEventListener('click', eventHandler0(ctx.addHero));
     _el_6.addEventListener('click', eventHandler0(ctx.reset));
@@ -162,8 +162,8 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
     ctx.newName = $event;
   }
 
-  void _handle_input_3_2($event) {
-    _DefaultValueAccessor_3_5.onChange($event.target.value);
+  void _handle_input_3_3($event) {
+    _DefaultValueAccessor_3_5.handleChange($event.target.value);
   }
 }
 
@@ -176,7 +176,7 @@ class _ViewSpyParentComponent1 extends AppView<import1.SpyParentComponent> {
   import17.SpyDirective _SpyDirective_0_5;
   import2.Text _text_1;
   var _expr_0;
-  _ViewSpyParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSpyParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSpyParentComponent0._renderType;
   }
   @override
@@ -221,7 +221,7 @@ class _ViewSpyParentComponent2 extends AppView<import1.SpyParentComponent> {
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewSpyParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewSpyParentComponent2(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewSpyParentComponent0._renderType;
   }
   @override
@@ -256,7 +256,7 @@ class _ViewSpyParentComponentHost0 extends AppView<dynamic> {
   ViewSpyParentComponent0 _compView_0;
   import18.LoggerService _LoggerService_0_5;
   import1.SpyParentComponent _SpyParentComponent_0_6;
-  _ViewSpyParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewSpyParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import9.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewSpyParentComponent0(this, 0);

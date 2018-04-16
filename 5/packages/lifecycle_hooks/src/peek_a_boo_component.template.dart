@@ -27,7 +27,7 @@ class ViewPeekABooComponent0 extends AppView<import1.PeekABooComponent> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewPeekABooComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewPeekABooComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('peek-a-boo');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$PeekABooComponent);
     setupComponentType(_renderType);
@@ -67,7 +67,7 @@ const List<dynamic> styles$PeekABooComponentHost = const [];
 class _ViewPeekABooComponentHost0 extends AppView<dynamic> {
   ViewPeekABooComponent0 _compView_0;
   import1.PeekABooComponent _PeekABooComponent_0_5;
-  _ViewPeekABooComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewPeekABooComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewPeekABooComponent0(this, 0);

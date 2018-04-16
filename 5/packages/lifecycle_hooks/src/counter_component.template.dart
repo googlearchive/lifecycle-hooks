@@ -38,7 +38,7 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
   var _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewMyCounterComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewMyCounterComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-counter');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$MyCounterComponent);
     setupComponentType(_renderType);
@@ -59,7 +59,7 @@ class ViewMyCounterComponent0 extends AppView<import1.MyCounterComponent> {
     addShimE(_el_3);
     import2.Text _text_4 = new import2.Text('-- Counter Change Log --');
     _el_3.append(_text_4);
-    var _anchor_5 = ngAnchor.clone(false);
+    final _anchor_5 = createViewContainerAnchor();
     _el_0.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 0, this, _anchor_5);
     TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_MyCounterComponent1);
@@ -100,7 +100,7 @@ class _ViewMyCounterComponent1 extends AppView<import1.MyCounterComponent> {
   import11.SpyDirective _SpyDirective_0_5;
   import2.Text _text_1;
   var _expr_0;
-  _ViewMyCounterComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewMyCounterComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewMyCounterComponent0._renderType;
   }
   @override
@@ -145,7 +145,7 @@ const List<dynamic> styles$MyCounterComponentHost = const [];
 class _ViewMyCounterComponentHost0 extends AppView<dynamic> {
   ViewMyCounterComponent0 _compView_0;
   import1.MyCounterComponent _MyCounterComponent_0_5;
-  _ViewMyCounterComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewMyCounterComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewMyCounterComponent0(this, 0);
@@ -190,7 +190,7 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
   num _expr_0;
   var _expr_1;
   static RenderComponentType _renderType;
-  ViewCounterParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewCounterParentComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.component, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('counter-parent');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.Emulated, styles$CounterParentComponent);
     setupComponentType(_renderType);
@@ -225,7 +225,7 @@ class ViewCounterParentComponent0 extends AppView<import1.CounterParentComponent
     addShimE(_el_8);
     import2.Text _text_9 = new import2.Text('-- Spy Lifecycle Hook Log --');
     _el_8.append(_text_9);
-    var _anchor_10 = ngAnchor.clone(false);
+    final _anchor_10 = createViewContainerAnchor();
     _el_0.append(_anchor_10);
     _appEl_10 = new ViewContainer(10, 0, this, _anchor_10);
     TemplateRef _TemplateRef_10_8 = new TemplateRef(_appEl_10, viewFactory_CounterParentComponent1);
@@ -276,7 +276,7 @@ class _ViewCounterParentComponent1 extends AppView<import1.CounterParentComponen
   import2.DivElement _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewCounterParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewCounterParentComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.embedded, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewCounterParentComponent0._renderType;
   }
   @override
@@ -311,7 +311,7 @@ class _ViewCounterParentComponentHost0 extends AppView<dynamic> {
   ViewCounterParentComponent0 _compView_0;
   import12.LoggerService _LoggerService_0_5;
   import1.CounterParentComponent _CounterParentComponent_0_6;
-  _ViewCounterParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewCounterParentComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.host, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewCounterParentComponent0(this, 0);
