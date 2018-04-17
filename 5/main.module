@@ -1,1 +1,1 @@
-{"p":["lifecycle_hooks","web/main.dart"],"s":[["lifecycle_hooks","web/main.template.dart"],["lifecycle_hooks","web/main.dart"]],"d":[["angular","lib/angular.dart"],["lifecycle_hooks","lib/app_component.template.dart"],["angular","lib/angular.template.dart"],["lifecycle_hooks","lib/app_component.dart"]]}
+{"p":["lifecycle_hooks","web/main.dart"],"s":[["lifecycle_hooks","web/main.dart"]],"d":[["lifecycle_hooks","lib/app_component.template.dart"],["angular","lib/angular.dart"]]}
