@@ -113,9 +113,6 @@ class ViewSpyParentComponent0 extends AppView<import1.SpyParentComponent> {
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import3.DefaultValueAccessor) && (3 == nodeIndex))) {
-      return _DefaultValueAccessor_3_5;
-    }
     if ((identical(token, const import14.MultiToken<import15.ControlValueAccessor>('NgValueAccessor')) && (3 == nodeIndex))) {
       return _NgValueAccessor_3_6;
     }
